@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 9.45197, 10 )
+
+[sub_resource type="CanvasItemMaterial" id=2]
+
+[sub_resource type="RectangleShape2D" id=3]
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 12.4098, 9.14154 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="Bedroom" type="CollisionShape2D" parent="Area2D"]
+scale = Vector2( 63.5643, 39.9463 )
+shape = SubResource( 1 )
+
+[node name="Wall1" type="CollisionShape2D" parent="Area2D"]
+material = SubResource( 2 )
+position = Vector2( 300, 0 )
+scale = Vector2( 30, 1.00605 )
+shape = SubResource( 3 )
+one_way_collision = true
+
+[node name="Wall2" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 0, 270 )
+scale = Vector2( 1, 14 )
+shape = SubResource( 4 )
