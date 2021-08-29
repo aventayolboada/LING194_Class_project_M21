@@ -3,7 +3,6 @@
 [ext_resource path="res://Props 2/Item.gd" type="Script" id=2]
 
 [node name="Item" type="Node2D"]
-z_index = 1
 script = ExtResource( 2 )
 
 [node name="TextureRect" type="TextureRect" parent="."]

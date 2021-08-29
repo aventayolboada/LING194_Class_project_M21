@@ -1,0 +1,110 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Props 2/SlotQuiz.gd" type="Script" id=1]
+
+[node name="SlotQuiz" type="Control"]
+margin_left = 1.901
+margin_top = -0.45575
+margin_right = 1025.9
+margin_bottom = 601.544
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="QuizWindow" type="WindowDialog" parent="."]
+visible = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -203.5
+margin_top = -89.0
+margin_right = 203.5
+margin_bottom = 89.0
+window_title = "Quiz Time!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChoiceBox" type="OptionButton" parent="QuizWindow"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -10.0
+margin_bottom = 10.0
+
+[node name="OKButton" type="Button" parent="QuizWindow"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -38.0
+margin_top = -50.9352
+margin_right = 38.0
+margin_bottom = -16.9352
+text = "OK"
+
+[node name="Label" type="Label" parent="QuizWindow"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -113.563
+margin_top = 31.7625
+margin_right = 117.437
+margin_bottom = 45.7625
+text = "How do you say this item in Mixtec?"
+
+[node name="Correct" type="WindowDialog" parent="."]
+visible = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -105.0
+margin_top = -54.0
+margin_right = 105.0
+margin_bottom = 54.0
+window_title = "Correct"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Correct"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -73.5
+margin_top = -7.0
+margin_right = 73.5
+margin_bottom = 7.0
+text = "WooHoo! You are right!"
+
+[node name="Wrong" type="WindowDialog" parent="."]
+visible = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -105.001
+margin_top = -55.0
+margin_right = 104.999
+margin_bottom = 55.0
+window_title = "Wrong"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Wrong"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -73.0
+margin_top = -7.0
+margin_right = 73.0
+margin_bottom = 7.0
+text = "Oops! Please try again!"
+
+[connection signal="button_up" from="QuizWindow/OKButton" to="." method="_on_ok_button_up"]
+[connection signal="popup_hide" from="Wrong" to="." method="_on_Wrong_popup_hide"]

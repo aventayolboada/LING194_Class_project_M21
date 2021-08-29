@@ -1,17 +1,41 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Props 2/slot.gd" type="Script" id=1]
 [ext_resource path="res://Props 2/images/default_inventory_background.png" type="Texture" id=2]
 [ext_resource path="res://Props 2/images/item_slot_default_background.png" type="Texture" id=3]
 [ext_resource path="res://Props 2/Backpack.gd" type="Script" id=4]
+[ext_resource path="res://Props 2/SlotQuiz.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Props 2/images/item_slot_selected_background.png" type="Texture" id=6]
 
 [sub_resource type="StyleBoxTexture" id=1]
+texture = ExtResource( 3 )
+region_rect = Rect2( 0, 0, 18, 18 )
+
+[sub_resource type="StyleBoxTexture" id=4]
+texture = ExtResource( 3 )
+region_rect = Rect2( 0, 0, 18, 18 )
+
+[sub_resource type="StyleBoxTexture" id=2]
+texture = ExtResource( 6 )
+region_rect = Rect2( 0, 0, 20, 20 )
+
+[sub_resource type="StyleBoxTexture" id=3]
 texture = ExtResource( 3 )
 region_rect = Rect2( 0, 0, 18, 18 )
 
 [node name="Backpack" type="Node2D"]
 position = Vector2( -2.03827, 3.05746 )
 script = ExtResource( 4 )
+
+[node name="Node2D" type="Node2D" parent="."]
+visible = false
+z_index = 1
+
+[node name="SlotQuiz" parent="Node2D" instance=ExtResource( 5 )]
+margin_left = 6.0
+margin_top = -5.0
+margin_right = 1026.0
+margin_bottom = 592.0
 
 [node name="TextureRect" type="TextureRect" parent="."]
 margin_left = 172.519
@@ -49,6 +73,23 @@ rect_pivot_offset = Vector2( 1, 1 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 1 )
 
+[node name="Button" type="Button" parent="GridContainer/slot1"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -10.0
+margin_top = -10.0
+margin_right = 9.0
+margin_bottom = 10.0
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+custom_colors/font_color_disabled = Color( 0.929412, 0.054902, 0.054902, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="slot2" type="Panel" parent="GridContainer"]
 margin_left = 22.0
 margin_right = 40.0
@@ -57,6 +98,23 @@ rect_min_size = Vector2( 18, 18 )
 rect_pivot_offset = Vector2( 1, 1 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 1 )
+
+[node name="Button" type="Button" parent="GridContainer/slot2"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -10.0
+margin_top = -10.0
+margin_right = 9.0
+margin_bottom = 10.0
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+custom_colors/font_color_disabled = Color( 0.929412, 0.054902, 0.054902, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="slot3" type="Panel" parent="GridContainer"]
 margin_left = 44.0
@@ -67,6 +125,23 @@ rect_pivot_offset = Vector2( 1, 1 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 1 )
 
+[node name="Button" type="Button" parent="GridContainer/slot3"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -10.0
+margin_top = -10.0
+margin_right = 9.0
+margin_bottom = 10.0
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+custom_colors/font_color_disabled = Color( 0.929412, 0.054902, 0.054902, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="slot4" type="Panel" parent="GridContainer"]
 margin_left = 66.0
 margin_right = 84.0
@@ -75,6 +150,23 @@ rect_min_size = Vector2( 18, 18 )
 rect_pivot_offset = Vector2( 1, 1 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 1 )
+
+[node name="Button" type="Button" parent="GridContainer/slot4"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -10.0
+margin_top = -10.0
+margin_right = 9.0
+margin_bottom = 10.0
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+custom_colors/font_color_disabled = Color( 0.929412, 0.054902, 0.054902, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="slot5" type="Panel" parent="GridContainer"]
 margin_left = 88.0
@@ -85,6 +177,23 @@ rect_pivot_offset = Vector2( 1, 1 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 1 )
 
+[node name="Button" type="Button" parent="GridContainer/slot5"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -10.0
+margin_top = -10.0
+margin_right = 9.0
+margin_bottom = 10.0
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+custom_colors/font_color_disabled = Color( 0.929412, 0.054902, 0.054902, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="slot6" type="Panel" parent="GridContainer"]
 margin_top = 23.0
 margin_right = 18.0
@@ -93,6 +202,23 @@ rect_min_size = Vector2( 18, 18 )
 rect_pivot_offset = Vector2( 1, 1 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 1 )
+
+[node name="Button" type="Button" parent="GridContainer/slot6"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -10.0
+margin_top = -10.0
+margin_right = 9.0
+margin_bottom = 10.0
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+custom_colors/font_color_disabled = Color( 0.929412, 0.054902, 0.054902, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="slot7" type="Panel" parent="GridContainer"]
 margin_left = 22.0
@@ -104,6 +230,23 @@ rect_pivot_offset = Vector2( 1, 1 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 1 )
 
+[node name="Button" type="Button" parent="GridContainer/slot7"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -10.0
+margin_top = -10.0
+margin_right = 9.0
+margin_bottom = 10.0
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+custom_colors/font_color_disabled = Color( 0.929412, 0.054902, 0.054902, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="slot8" type="Panel" parent="GridContainer"]
 margin_left = 44.0
 margin_top = 23.0
@@ -113,6 +256,23 @@ rect_min_size = Vector2( 18, 18 )
 rect_pivot_offset = Vector2( 1, 1 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 1 )
+
+[node name="Button" type="Button" parent="GridContainer/slot8"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -10.0
+margin_top = -10.0
+margin_right = 9.0
+margin_bottom = 10.0
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+custom_colors/font_color_disabled = Color( 0.929412, 0.054902, 0.054902, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="slot9" type="Panel" parent="GridContainer"]
 margin_left = 66.0
@@ -124,6 +284,23 @@ rect_pivot_offset = Vector2( 1, 1 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 1 )
 
+[node name="Button" type="Button" parent="GridContainer/slot9"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -10.0
+margin_top = -10.0
+margin_right = 9.0
+margin_bottom = 10.0
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+custom_colors/font_color_disabled = Color( 0.929412, 0.054902, 0.054902, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="slot10" type="Panel" parent="GridContainer"]
 margin_left = 88.0
 margin_top = 23.0
@@ -133,6 +310,20 @@ rect_min_size = Vector2( 18, 18 )
 rect_pivot_offset = Vector2( 1, 1 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 1 )
+
+[node name="Button" type="Button" parent="GridContainer/slot10"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -10.0
+margin_top = -10.0
+margin_right = 9.0
+margin_bottom = 10.0
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+custom_colors/font_color_disabled = Color( 0.929412, 0.054902, 0.054902, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -145,6 +336,20 @@ rect_min_size = Vector2( 18, 18 )
 rect_pivot_offset = Vector2( 1, 1 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 1 )
+
+[node name="Button" type="Button" parent="GridContainer/slot11"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -10.0
+margin_top = -10.0
+margin_right = 9.0
+margin_bottom = 10.0
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+custom_colors/font_color_disabled = Color( 0.929412, 0.054902, 0.054902, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -159,6 +364,23 @@ rect_pivot_offset = Vector2( 1, 1 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 1 )
 
+[node name="Button" type="Button" parent="GridContainer/slot12"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -10.0
+margin_top = -10.0
+margin_right = 9.0
+margin_bottom = 10.0
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+custom_colors/font_color_disabled = Color( 0.929412, 0.054902, 0.054902, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="slot13" type="Panel" parent="GridContainer"]
 margin_left = 44.0
 margin_top = 46.0
@@ -168,6 +390,23 @@ rect_min_size = Vector2( 18, 18 )
 rect_pivot_offset = Vector2( 1, 1 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 1 )
+
+[node name="Button" type="Button" parent="GridContainer/slot13"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -10.0
+margin_top = -10.0
+margin_right = 9.0
+margin_bottom = 10.0
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+custom_colors/font_color_disabled = Color( 0.929412, 0.054902, 0.054902, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="slot14" type="Panel" parent="GridContainer"]
 margin_left = 66.0
@@ -179,6 +418,23 @@ rect_pivot_offset = Vector2( 1, 1 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 1 )
 
+[node name="Button" type="Button" parent="GridContainer/slot14"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -10.0
+margin_top = -10.0
+margin_right = 9.0
+margin_bottom = 10.0
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+custom_colors/font_color_disabled = Color( 0.929412, 0.054902, 0.054902, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="slot15" type="Panel" parent="GridContainer"]
 margin_left = 88.0
 margin_top = 46.0
@@ -189,6 +445,23 @@ rect_pivot_offset = Vector2( 1, 1 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 1 )
 
+[node name="Button" type="Button" parent="GridContainer/slot15"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -10.0
+margin_top = -10.0
+margin_right = 9.0
+margin_bottom = 10.0
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+custom_colors/font_color_disabled = Color( 0.929412, 0.054902, 0.054902, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="slot16" type="Panel" parent="GridContainer"]
 margin_top = 69.0
 margin_right = 18.0
@@ -197,6 +470,23 @@ rect_min_size = Vector2( 18, 18 )
 rect_pivot_offset = Vector2( 1, 1 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 1 )
+
+[node name="Button" type="Button" parent="GridContainer/slot16"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -10.0
+margin_top = -10.0
+margin_right = 9.0
+margin_bottom = 10.0
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+custom_colors/font_color_disabled = Color( 0.929412, 0.054902, 0.054902, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="slot17" type="Panel" parent="GridContainer"]
 margin_left = 22.0
@@ -208,6 +498,23 @@ rect_pivot_offset = Vector2( 1, 1 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 1 )
 
+[node name="Button" type="Button" parent="GridContainer/slot17"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -10.0
+margin_top = -10.0
+margin_right = 9.0
+margin_bottom = 10.0
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+custom_colors/font_color_disabled = Color( 0.929412, 0.054902, 0.054902, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="slot18" type="Panel" parent="GridContainer"]
 margin_left = 44.0
 margin_top = 69.0
@@ -217,6 +524,23 @@ rect_min_size = Vector2( 18, 18 )
 rect_pivot_offset = Vector2( 1, 1 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 1 )
+
+[node name="Button" type="Button" parent="GridContainer/slot18"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -10.0
+margin_top = -10.0
+margin_right = 9.0
+margin_bottom = 10.0
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+custom_colors/font_color_disabled = Color( 0.929412, 0.054902, 0.054902, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="slot19" type="Panel" parent="GridContainer"]
 margin_left = 66.0
@@ -228,6 +552,23 @@ rect_pivot_offset = Vector2( 1, 1 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 1 )
 
+[node name="Button" type="Button" parent="GridContainer/slot19"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -10.0
+margin_top = -10.0
+margin_right = 9.0
+margin_bottom = 10.0
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+custom_colors/font_color_disabled = Color( 0.929412, 0.054902, 0.054902, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="slot20" type="Panel" parent="GridContainer"]
 margin_left = 88.0
 margin_top = 69.0
@@ -237,3 +578,41 @@ rect_min_size = Vector2( 18, 18 )
 rect_pivot_offset = Vector2( 1, 1 )
 custom_styles/panel = SubResource( 1 )
 script = ExtResource( 1 )
+
+[node name="Button" type="Button" parent="GridContainer/slot20"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -10.0
+margin_top = -10.0
+margin_right = 9.0
+margin_bottom = 10.0
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+custom_colors/font_color_disabled = Color( 0.929412, 0.054902, 0.054902, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="button_up" from="GridContainer/slot1/Button" to="Node2D/SlotQuiz" method="_on_trigger_button_up"]
+[connection signal="button_up" from="GridContainer/slot2/Button" to="Node2D/SlotQuiz" method="_on_trigger_button_up"]
+[connection signal="button_up" from="GridContainer/slot3/Button" to="Node2D/SlotQuiz" method="_on_trigger_button_up"]
+[connection signal="button_up" from="GridContainer/slot4/Button" to="Node2D/SlotQuiz" method="_on_trigger_button_up"]
+[connection signal="button_up" from="GridContainer/slot5/Button" to="Node2D/SlotQuiz" method="_on_trigger_button_up"]
+[connection signal="button_up" from="GridContainer/slot6/Button" to="Node2D/SlotQuiz" method="_on_trigger_button_up"]
+[connection signal="button_up" from="GridContainer/slot7/Button" to="Node2D/SlotQuiz" method="_on_trigger_button_up"]
+[connection signal="button_up" from="GridContainer/slot8/Button" to="Node2D/SlotQuiz" method="_on_trigger_button_up"]
+[connection signal="button_up" from="GridContainer/slot9/Button" to="Node2D/SlotQuiz" method="_on_trigger_button_up"]
+[connection signal="button_up" from="GridContainer/slot10/Button" to="Node2D/SlotQuiz" method="_on_trigger_button_up"]
+[connection signal="button_up" from="GridContainer/slot11/Button" to="Node2D/SlotQuiz" method="_on_trigger_button_up"]
+[connection signal="button_up" from="GridContainer/slot12/Button" to="Node2D/SlotQuiz" method="_on_trigger_button_up"]
+[connection signal="button_up" from="GridContainer/slot13/Button" to="Node2D/SlotQuiz" method="_on_trigger_button_up"]
+[connection signal="button_up" from="GridContainer/slot14/Button" to="Node2D/SlotQuiz" method="_on_trigger_button_up"]
+[connection signal="button_up" from="GridContainer/slot15/Button" to="Node2D/SlotQuiz" method="_on_trigger_button_up"]
+[connection signal="button_up" from="GridContainer/slot16/Button" to="Node2D/SlotQuiz" method="_on_trigger_button_up"]
+[connection signal="button_up" from="GridContainer/slot17/Button" to="Node2D/SlotQuiz" method="_on_trigger_button_up"]
+[connection signal="button_up" from="GridContainer/slot18/Button" to="Node2D/SlotQuiz" method="_on_trigger_button_up"]
+[connection signal="button_up" from="GridContainer/slot19/Button" to="Node2D/SlotQuiz" method="_on_trigger_button_up"]
+[connection signal="button_up" from="GridContainer/slot20/Button" to="Node2D/SlotQuiz" method="_on_trigger_button_up"]

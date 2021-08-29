@@ -10,7 +10,7 @@ func _ready():
 
 func slot_gui_input(event: InputEvent, slot: SlotClass):
 	if event is InputEventMouseButton:
-		if event.button_index == BUTTON_LEFT && event.pressed:
+		if event.button_index == BUTTON_RIGHT && event.pressed:
 			if holding_item != null: # place into empty slot
 				if !slot.item:
 					slot.putIntoSlot(holding_item)
@@ -21,7 +21,6 @@ func slot_gui_input(event: InputEvent, slot: SlotClass):
 					temp_item.global_position = event.global_position
 					slot.putIntoSlot(holding_item)
 					holding_item = temp_item
-					holding_item.global_position = get_global_mouse_position()
 			elif slot.item: # start holding the item
 				holding_item = slot.item
 				slot.pickFromSlot()
