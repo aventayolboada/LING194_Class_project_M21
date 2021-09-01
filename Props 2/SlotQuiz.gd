@@ -6,12 +6,15 @@ var selected_style: StyleBoxTexture = null
 onready var ChoiceBox = get_node("QuizWindow/ChoiceBox")
 onready var QuizWindow = get_node("QuizWindow")
 onready var OKButton = get_node("QuizWindow/OKButton")
+onready var Question = get_node("QuizWindow/Question")
 onready var Correct = get_node("Correct")
 onready var Wrong = get_node("Wrong")
 onready var choices = []
-onready var wordbank = ["rabbit", "plate", "bird", "mask", "fox", "door", "cup", "bowl"]
+onready var wordbank = ["rabbitM", "plateM", "birdM", "maskM", "foxM", "doorM", "cupM", "bowlM"]
+onready var dictionary = {"rabbit": "rabbitM", "plate": "plateM", "bird" : "birdM", "mask" : "maskM", "fox": "foxM", "door" : "doorM", "cup" : "cupM", "bowl" : "bowlM"}
 onready var choiceNum = 4
-onready var targetWord
+onready var targetWordENG
+onready var targetWordMIX
 onready var targetIndex
 
 # list of buttons of words
@@ -40,33 +43,37 @@ func _ready() -> void:
 
 func _on_ok_button_up():
 	QuizWindow.visible = false
-	if ChoiceBox.get_item_text(ChoiceBox.selected) == targetWord:
+	if ChoiceBox.get_item_text(ChoiceBox.selected) == targetWordMIX:
 		Correct.visible = true
-		get_node("../../GridContainer/"+ targetWord +"/Collected").visible = false
-		get_node("../../GridContainer/"+ targetWord +"/Uncollected").visible = true
-		get_node("../../GridContainer/"+ targetWord +"/Node2D").visible = false
-		get_node("../../GridContainer/"+ targetWord).set('custom_styles/panel', selected_style)
+		get_node("../../GridContainer/"+ targetWordENG +"/Collected").visible = false
+		get_node("../../GridContainer/"+ targetWordENG +"/Uncollected").visible = true
+		get_node("../../GridContainer/"+ targetWordENG +"/Node2D").visible = false
+		get_node("../../GridContainer/"+ targetWordENG).set('custom_styles/panel', selected_style)
 	else:
 		Wrong.visible = true
 		_on_Wrong_popup_hide()
 
 #func _on_Button_button_up(extra_arg_0):
 func _action(button : Button) -> void:
-	targetWord = button.name
-	_generate_QuizWindow(targetWord)
+	targetWordENG = button.name
+	targetWordMIX = dictionary[targetWordENG]
+	_generate_QuizWindow(targetWordENG, targetWordMIX)
 	QuizWindow.visible = true
 
-func _generate_QuizWindow(targetWord):
+func _generate_QuizWindow(targetWordENG, targetWordMIX):
 	ChoiceBox.clear()
 	choices.clear()
+	
+	Question.text = "How do you say " + targetWordENG + " in Mixtec?"
+	
 	var wordbankCOPY = wordbank
-	wordbankCOPY.erase(targetWord)
+	wordbankCOPY.erase(targetWordMIX)
 	for i in range(choiceNum):
 		var choiceIndex = randi()%(wordbankCOPY.size())
 		while choices.find(wordbankCOPY[choiceIndex]) != -1:
 			choiceIndex = randi()%(wordbankCOPY.size())
 		choices.append(wordbankCOPY[choiceIndex])
-	choices[randi()%(choiceNum)] = targetWord
+	choices[randi()%(choiceNum)] = targetWordMIX
 	
 	for choice in choices:
 		ChoiceBox.add_item(choice)

@@ -51,7 +51,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="QuizWindow"]
+[node name="Question" type="Label" parent="QuizWindow"]
 anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -113.563
