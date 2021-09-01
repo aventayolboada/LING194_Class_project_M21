@@ -1,5 +1,6 @@
-[gd_scene load_steps=37 format=2]
+[gd_scene load_steps=40 format=2]
 
+[ext_resource path="res://Props 2/images/close_icon.png" type="Texture" id=1]
 [ext_resource path="res://Props 2/images/default_inventory_background.png" type="Texture" id=2]
 [ext_resource path="res://Props 2/images/item_slot_default_background.png" type="Texture" id=3]
 [ext_resource path="res://Player/Walk (3).png" type="Texture" id=4]
@@ -13,6 +14,8 @@
 [ext_resource path="res://Props 2/images/Items/door.png" type="Texture" id=12]
 [ext_resource path="res://Props 2/images/Items/fox.png" type="Texture" id=13]
 [ext_resource path="res://Props 2/images/Items/bowl.png" type="Texture" id=14]
+[ext_resource path="res://Props 2/images/thumbs_up.png" type="Texture" id=15]
+[ext_resource path="res://Props 2/Backpack.gd" type="Script" id=16]
 
 [sub_resource type="StyleBoxTexture" id=1]
 texture = ExtResource( 3 )
@@ -105,6 +108,7 @@ region_rect = Rect2( 0, 0, 18, 18 )
 [node name="Backpack" type="Node2D"]
 position = Vector2( -2.03827, 3.05746 )
 z_as_relative = false
+script = ExtResource( 16 )
 
 [node name="Node2D" type="Node2D" parent="."]
 visible = false
@@ -116,7 +120,7 @@ margin_top = -1.0
 margin_right = 1026.0
 margin_bottom = 592.0
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="Background" type="TextureRect" parent="."]
 margin_left = 173.268
 margin_top = 126.323
 margin_right = 380.268
@@ -128,7 +132,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TextureRect" type="TextureRect" parent="TextureRect"]
+[node name="Player" type="TextureRect" parent="Background"]
 margin_left = 41.7804
 margin_top = 51.5637
 margin_right = 457.781
@@ -139,7 +143,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="TextureRect"]
+[node name="Label" type="Label" parent="Background"]
 anchor_left = 0.00100973
 anchor_top = -0.00137874
 anchor_right = 0.00100973
@@ -156,13 +160,31 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Close_Icon" type="Button" parent="Background"]
+anchor_right = 0.057971
+anchor_bottom = 0.0535714
+margin_left = 189.074
+margin_top = 1.26831
+margin_right = 1213.07
+margin_bottom = 1025.27
+rect_scale = Vector2( 0.015, 0.015 )
+custom_colors/font_color_disabled = Color( 1, 1, 1, 0 )
+custom_colors/font_color = Color( 0, 0, 0, 0 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 0 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 0 )
+icon = ExtResource( 1 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="GridContainer" type="GridContainer" parent="."]
 anchor_top = 0.000311635
 anchor_bottom = 0.000311635
-margin_left = 460.088
-margin_top = 188.813
-margin_right = 568.088
-margin_bottom = 275.813
+margin_left = 458.088
+margin_top = 186.813
+margin_right = 566.088
+margin_bottom = 273.813
 rect_scale = Vector2( 3, 3 )
 rect_pivot_offset = Vector2( 1, 1 )
 custom_constants/vseparation = 5
@@ -893,6 +915,35 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="ThumbsUp" type="TextureRect" parent="."]
+visible = false
+margin_left = 466.934
+margin_top = 169.024
+margin_right = 1081.93
+margin_bottom = 785.024
+rect_scale = Vector2( 0.48, 0.48 )
+texture = ExtResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CongratsMsg" type="Label" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = 383.897
+margin_top = 137.927
+margin_right = 518.897
+margin_bottom = 151.927
+rect_scale = Vector2( 2, 2 )
+custom_colors/font_color = Color( 1, 0.788235, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Congrats, UserName!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="button_up" from="Background/Close_Icon" to="." method="_on_Close_Icon_button_up"]
 [connection signal="button_up" from="GridContainer/slot4/Button" to="Node2D/SlotQuiz" method="_on_trigger_button_up"]
 [connection signal="button_up" from="GridContainer/slot5/Button" to="Node2D/SlotQuiz" method="_on_trigger_button_up"]
 [connection signal="button_up" from="GridContainer/slot6/Button" to="Node2D/SlotQuiz" method="_on_trigger_button_up"]

@@ -9,9 +9,13 @@ onready var OKButton = get_node("QuizWindow/OKButton")
 onready var Question = get_node("QuizWindow/Question")
 onready var Correct = get_node("Correct")
 onready var Wrong = get_node("Wrong")
+onready var ThumbsUp = get_node("../../ThumbsUp")
+onready var CongratsMsg = get_node("../../CongratsMsg")
+
 onready var choices = []
 onready var wordbank = ["rabbitM", "plateM", "birdM", "maskM", "foxM", "doorM", "cupM", "bowlM"]
 onready var dictionary = {"rabbit": "rabbitM", "plate": "plateM", "bird" : "birdM", "mask" : "maskM", "fox": "foxM", "door" : "doorM", "cup" : "cupM", "bowl" : "bowlM"}
+onready var remainNum = wordbank.size()
 onready var choiceNum = 4
 onready var targetWordENG
 onready var targetWordMIX
@@ -44,12 +48,17 @@ func _ready() -> void:
 func _on_ok_button_up():
 	QuizWindow.visible = false
 	if ChoiceBox.get_item_text(ChoiceBox.selected) == targetWordMIX:
-		Correct.visible = true
+		Correct.visible = true		
 		
 		get_node("../../GridContainer/"+ targetWordENG +"/Collected").visible = false
 		get_node("../../GridContainer/"+ targetWordENG +"/Uncollected").visible = true
 		get_node("../../GridContainer/"+ targetWordENG +"/Node2D").visible = false
 		get_node("../../GridContainer/"+ targetWordENG).set('custom_styles/panel', selected_style)
+		
+		remainNum -= 1
+		if (!remainNum):
+			ThumbsUp.visible = true
+			CongratsMsg.visible = true
 		
 	else:
 		Wrong.visible = true
