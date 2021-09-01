@@ -15,26 +15,6 @@ func _ready():
 	default_style.texture = default_tex
 	empty_style.texture = empty_tex
 	
-	if randi()%2 == 0:
-		item = ItemClass.instance()
-		add_child(item)
-	refresh_style()
-	
-func pickFromSlot():
-	remove_child(item)
-	var backpackNode = find_parent("Backpack")
-	backpackNode.add_child(item)
-	item = null
-	refresh_style()
-
-func putIntoSlot(new_item):
-	item = new_item
-	item.position = Vector2(0,0)
-	var backpackNode = find_parent("Backpack")
-	backpackNode.add_child(item)
-	add_child(item)
-	refresh_style()
-	
 func refresh_style():
 	if item == null:
 		set('custom_styles/panel', empty_style)

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Iron Sword.png-ef3dabf1c0ac812d4537ae2ca2246892.stex"
+path="res://.import/rabbit.png-5ada272219c6f627571ae702091fe12b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Props 2/images/Iron Sword.png"
-dest_files=[ "res://.import/Iron Sword.png-ef3dabf1c0ac812d4537ae2ca2246892.stex" ]
+source_file="res://Props 2/images/Items/rabbit.png"
+dest_files=[ "res://.import/rabbit.png-5ada272219c6f627571ae702091fe12b.stex" ]
 
 [params]
 

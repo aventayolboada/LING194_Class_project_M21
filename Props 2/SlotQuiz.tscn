@@ -3,9 +3,9 @@
 [ext_resource path="res://Props 2/SlotQuiz.gd" type="Script" id=1]
 
 [node name="SlotQuiz" type="Control"]
-margin_left = 1.901
+margin_left = 0.739013
 margin_top = -0.45575
-margin_right = 1025.9
+margin_right = 1024.74
 margin_bottom = 601.544
 script = ExtResource( 1 )
 __meta__ = {
@@ -18,10 +18,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -203.5
-margin_top = -89.0
-margin_right = 203.5
-margin_bottom = 89.0
+margin_left = -169.0
+margin_top = -109.5
+margin_right = 169.0
+margin_bottom = 109.5
 window_title = "Quiz Time!"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -33,6 +33,9 @@ anchor_right = 1.0
 anchor_bottom = 0.5
 margin_top = -10.0
 margin_bottom = 10.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="OKButton" type="Button" parent="QuizWindow"]
 anchor_left = 0.5
@@ -44,6 +47,9 @@ margin_top = -50.9352
 margin_right = 38.0
 margin_bottom = -16.9352
 text = "OK"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Label" type="Label" parent="QuizWindow"]
 anchor_left = 0.5
@@ -53,6 +59,9 @@ margin_top = 31.7625
 margin_right = 117.437
 margin_bottom = 45.7625
 text = "How do you say this item in Mixtec?"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Correct" type="WindowDialog" parent="."]
 visible = true
@@ -79,6 +88,9 @@ margin_top = -7.0
 margin_right = 73.5
 margin_bottom = 7.0
 text = "WooHoo! You are right!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Wrong" type="WindowDialog" parent="."]
 visible = true
@@ -86,9 +98,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -105.001
+margin_left = -105.521
 margin_top = -55.0
-margin_right = 104.999
+margin_right = 104.479
 margin_bottom = 55.0
 window_title = "Wrong"
 __meta__ = {
@@ -105,6 +117,10 @@ margin_top = -7.0
 margin_right = 73.0
 margin_bottom = 7.0
 text = "Oops! Please try again!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
+[connection signal="about_to_show" from="QuizWindow" to="." method="_on_QuizWindow_about_to_show"]
 [connection signal="button_up" from="QuizWindow/OKButton" to="." method="_on_ok_button_up"]
 [connection signal="popup_hide" from="Wrong" to="." method="_on_Wrong_popup_hide"]
