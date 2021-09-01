@@ -45,10 +45,12 @@ func _on_ok_button_up():
 	QuizWindow.visible = false
 	if ChoiceBox.get_item_text(ChoiceBox.selected) == targetWordMIX:
 		Correct.visible = true
+		
 		get_node("../../GridContainer/"+ targetWordENG +"/Collected").visible = false
 		get_node("../../GridContainer/"+ targetWordENG +"/Uncollected").visible = true
 		get_node("../../GridContainer/"+ targetWordENG +"/Node2D").visible = false
 		get_node("../../GridContainer/"+ targetWordENG).set('custom_styles/panel', selected_style)
+		
 	else:
 		Wrong.visible = true
 		_on_Wrong_popup_hide()
@@ -66,14 +68,16 @@ func _generate_QuizWindow(targetWordENG, targetWordMIX):
 	
 	Question.text = "How do you say " + targetWordENG + " in Mixtec?"
 	
-	var wordbankCOPY = wordbank
-	wordbankCOPY.erase(targetWordMIX)
+	wordbank.erase(targetWordMIX)
+	
 	for i in range(choiceNum):
-		var choiceIndex = randi()%(wordbankCOPY.size())
-		while choices.find(wordbankCOPY[choiceIndex]) != -1:
-			choiceIndex = randi()%(wordbankCOPY.size())
-		choices.append(wordbankCOPY[choiceIndex])
+		var choiceIndex = randi()%(wordbank.size())
+		while choices.find(wordbank[choiceIndex]) != -1:
+			choiceIndex = randi()%(wordbank.size())
+		choices.append(wordbank[choiceIndex])
 	choices[randi()%(choiceNum)] = targetWordMIX
+	
+	wordbank.append(targetWordMIX)
 	
 	for choice in choices:
 		ChoiceBox.add_item(choice)
