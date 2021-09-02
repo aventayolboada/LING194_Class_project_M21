@@ -64,7 +64,7 @@
 [ext_resource path="res://Player/assets/spriteanimations/Jump (26).png" type="Texture" id=62]
 [ext_resource path="res://Player/assets/spriteanimations/qsstart.png" type="Texture" id=63]
 [ext_resource path="res://Player/assets/audio/60013__qubodup__whoosh.wav" type="AudioStream" id=64]
-[ext_resource path="res://Player/assets/audio/362811__trouby__fireworks.wav" type="AudioStream" id=65]
+[ext_resource path="res://Player/assets/audio/455459__milankovanda__fireworks-in-background.wav" type="AudioStream" id=65]
 [ext_resource path="res://Player/assets/audio/413203__joepayne__clean-and-pompous-fanfare-trumpet.mp3" type="AudioStream" id=66]
 [ext_resource path="res://Player/assets/spriteanimations/Walk (20).png" type="Texture" id=67]
 [ext_resource path="res://Player/assets/spriteanimations/Run (1).png" type="Texture" id=68]

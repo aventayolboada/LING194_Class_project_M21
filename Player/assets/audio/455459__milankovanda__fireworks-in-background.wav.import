@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/455459__milankovanda__fireworks-in-background.wav-f352be47465d61b29455f487e09d02a0.sample"
+
+[deps]
+
+source_file="res://Player/assets/audio/455459__milankovanda__fireworks-in-background.wav"
+dest_files=[ "res://.import/455459__milankovanda__fireworks-in-background.wav-f352be47465d61b29455f487e09d02a0.sample" ]
+
+[params]
+
+force/8_bit=true
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
