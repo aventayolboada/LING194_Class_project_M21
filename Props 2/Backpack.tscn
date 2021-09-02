@@ -148,9 +148,9 @@ anchor_left = 0.00100973
 anchor_top = -0.00137874
 anchor_right = 0.00100973
 anchor_bottom = -0.00137874
-margin_left = 47.2103
+margin_left = 47.0547
 margin_top = 30.5255
-margin_right = 129.21
+margin_right = 129.055
 margin_bottom = 73.5255
 rect_scale = Vector2( 0.5, 0.5 )
 custom_colors/font_color = Color( 0.0196078, 0.0392157, 0.972549, 1 )
@@ -956,3 +956,4 @@ __meta__ = {
 [connection signal="button_up" from="GridContainer/slot13/Button" to="Node2D/SlotQuiz" method="_on_trigger_button_up"]
 [connection signal="button_up" from="GridContainer/slot14/Button" to="Node2D/SlotQuiz" method="_on_trigger_button_up"]
 [connection signal="button_up" from="GridContainer/slot15/Button" to="Node2D/SlotQuiz" method="_on_trigger_button_up"]
+[connection signal="visibility_changed" from="CongratsMsg" to="Node2D/SlotQuiz" method="_on_CongratsMsg_visibility_changed"]

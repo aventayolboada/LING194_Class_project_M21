@@ -11,6 +11,8 @@ onready var Correct = get_node("Correct")
 onready var Wrong = get_node("Wrong")
 onready var ThumbsUp = get_node("../../ThumbsUp")
 onready var CongratsMsg = get_node("../../CongratsMsg")
+onready var Zoom_Screenshot = get_node("Zoom_Screenshot")
+
 
 onready var choices = []
 onready var wordbank = ["rabbitM", "plateM", "birdM", "maskM", "foxM", "doorM", "cupM", "bowlM"]
@@ -93,3 +95,7 @@ func _generate_QuizWindow(targetWordENG, targetWordMIX):
 
 func _on_Wrong_popup_hide():
 	QuizWindow.visible = true
+
+
+func _on_CongratsMsg_visibility_changed():
+	Zoom_Screenshot.visible = true
