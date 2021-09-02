@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/60013__qubodup__whoosh.wav-66114a179064ab5d6015fbedaa2eb556.sample"
+
+[deps]
+
+source_file="res://Player/assets/audio/60013__qubodup__whoosh.wav"
+dest_files=[ "res://.import/60013__qubodup__whoosh.wav-66114a179064ab5d6015fbedaa2eb556.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/413203__joepayne__clean-and-pompous-fanfare-trumpet.mp3-436b64051cd11464b8dcc17ca579bc88.mp3str"
+
+[deps]
+
+source_file="res://Player/assets/audio/413203__joepayne__clean-and-pompous-fanfare-trumpet.mp3"
+dest_files=[ "res://.import/413203__joepayne__clean-and-pompous-fanfare-trumpet.mp3-436b64051cd11464b8dcc17ca579bc88.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
