@@ -15,8 +15,8 @@ onready var Zoom_Screenshot = get_node("Zoom_Screenshot")
 
 
 onready var choices = []
-onready var wordbank = ["rabbitM", "plateM", "birdM", "maskM", "foxM", "doorM", "cupM", "bowlM"]
-onready var dictionary = {"rabbit": "rabbitM", "plate": "plateM", "bird" : "birdM", "mask" : "maskM", "fox": "foxM", "door" : "doorM", "cup" : "cupM", "bowl" : "bowlM"}
+onready var wordbank = ["mésá", "kò'ò", "téè", "kafeè", "txìkuìí", "yé'é", "táxá", "ita lakoso", "kúchárá", "trínchí", "yuchì", "vásó", "tele", "nuú koó", "mansáná", "shìchì", "vixìn", "ita rròsá", "ita tuséná", "sò'và"]
+onready var dictionary = {"table": "mésá", "plate": "kò'ò", "tea" : "téè", "coffee" : "kafeè", "water": "txìkuìí", "door" : "yé'é", "cup" : "táxá", "orchid" : "ita lakoso",  "spoon" : "kúchárá", "fork" : "trínchí", "knife" : "yuchì", "glass" : "vásó", "TV" : "tele", "sofa" : "nuú koó", "apple" : "mansáná", "pitaya" : "shìchì", "pineapple" : "vixìn", "rose" : "ita rròsá", "lily" : "ita tuséná", "chocolate" : "sò'và"}
 onready var remainNum = wordbank.size()
 onready var choiceNum = 4
 onready var targetWordENG
@@ -24,28 +24,52 @@ onready var targetWordMIX
 onready var targetIndex
 
 # list of buttons of words
-onready var rabbit = get_node("../../GridContainer/rabbit/Node2D/rabbit")
-onready var plate = get_node("../../GridContainer/plate/Node2D/plate")
-onready var bird = get_node("../../GridContainer/bird/Node2D/bird")
-onready var mask = get_node("../../GridContainer/mask/Node2D/mask")
-onready var fox = get_node("../../GridContainer/fox/Node2D/fox")
+onready var table = get_node("../../GridContainer/table/Node2D/table")
 onready var door = get_node("../../GridContainer/door/Node2D/door")
+onready var tea = get_node("../../GridContainer/tea/Node2D/tea")
+onready var coffee = get_node("../../GridContainer/coffee/Node2D/coffee")
+onready var water = get_node("../../GridContainer/water/Node2D/water")
 onready var cup = get_node("../../GridContainer/cup/Node2D/cup")
-onready var bowl = get_node("../../GridContainer/bowl/Node2D/bowl")
+onready var plate = get_node("../../GridContainer/plate/Node2D/plate")
+onready var spoon = get_node("../../GridContainer/spoon/Node2D/spoon")
+onready var fork = get_node("../../GridContainer/fork/Node2D/fork")
+onready var knife = get_node("../../GridContainer/knife/Node2D/knife")
+onready var glass = get_node("../../GridContainer/glass/Node2D/glass")
+onready var chocolate = get_node("../../GridContainer/chocolate/Node2D/chocolate")
+onready var apple = get_node("../../GridContainer/apple/Node2D/apple")
+onready var pitaya = get_node("../../GridContainer/pitaya/Node2D/pitaya")
+onready var pineapple = get_node("../../GridContainer/pineapple/Node2D/pineapple")
+onready var TV = get_node("../../GridContainer/TV/Node2D/TV")
+onready var sofa = get_node("../../GridContainer/sofa/Node2D/sofa")
+onready var rose = get_node("../../GridContainer/rose/Node2D/rose")
+onready var lily = get_node("../../GridContainer/lily/Node2D/lily")
+onready var orchid = get_node("../../GridContainer/orchid/Node2D/orchid")
 
 func _ready() -> void:
 	selected_style = StyleBoxTexture.new()
 	selected_style.texture = selected_tex
 	
 	# list of buttons of words
-	rabbit.connect("button_up", self, "_action", [rabbit])
-	plate.connect("button_up", self, "_action", [plate])
-	bird.connect("button_up", self, "_action", [bird])
-	mask.connect("button_up", self, "_action", [mask])
-	fox.connect("button_up", self, "_action", [fox])
+	table.connect("button_up", self, "_action", [table])
 	door.connect("button_up", self, "_action", [door])
+	tea.connect("button_up", self, "_action", [tea])
+	coffee.connect("button_up", self, "_action", [coffee])
+	water.connect("button_up", self, "_action", [water])
 	cup.connect("button_up", self, "_action", [cup])
-	bowl.connect("button_up", self, "_action", [bowl])
+	plate.connect("button_up", self, "_action", [plate])
+	spoon.connect("button_up", self, "_action", [spoon])
+	fork.connect("button_up", self, "_action", [fork])
+	knife.connect("button_up", self, "_action", [knife])
+	glass.connect("button_up", self, "_action", [glass])
+	chocolate.connect("button_up", self, "_action", [chocolate])
+	apple.connect("button_up", self, "_action", [apple])
+	pitaya.connect("button_up", self, "_action", [pitaya])
+	pineapple.connect("button_up", self, "_action", [pineapple])
+	TV.connect("button_up", self, "_action", [TV])
+	sofa.connect("button_up", self, "_action", [sofa])
+	rose.connect("button_up", self, "_action", [rose])
+	lily.connect("button_up", self, "_action", [lily])
+	orchid.connect("button_up", self, "_action", [orchid])
 
 func _on_ok_button_up():
 	QuizWindow.visible = false

@@ -98,7 +98,7 @@ margin_left = 9.0
 margin_top = -76.0
 margin_right = 9.0
 margin_bottom = -11.0
-text = "Contributors: Instructor -- Albert Ventayol-Boada (LING 194); Menu -- Ashley Yung, Christine Afework, Alex Wishowski; Player -- Mingnan Zhang, Karina Galaviz, Abby Welch; House -- Minyi Jiang, Yihan Li, Jalima Brooks; Learning -- Justin Liu, Yanru Liu; Backpack -- Liuhao Wu, Siyue Liu, Karina Rodriguez; Rug -- Heesoo Lee, Kirra sebastian, Bill Xin"
+text = "Contributors: Instructor -- Albert Ventayol-Boada (LING 194); Menu -- Ashley Yung, Christine Afework, Alex Wishowski; Player -- Mingnan Zhang, Karina Galaviz, Abby Welch; House -- Minyi Jiang, Yihan Li, Jalima Brooks; Learning -- Justin Liu, Yanru Liu; Backpack -- Liuhao Wu, Siyue Liu, Karina Rodriguez; Rug -- Kirra Sebastian, Bill Xin"
 autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false

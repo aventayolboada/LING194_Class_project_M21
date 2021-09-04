@@ -1,32 +1,43 @@
-[gd_scene load_steps=40 format=2]
+[gd_scene load_steps=71 format=2]
 
 [ext_resource path="res://Props 2/images/close_icon.png" type="Texture" id=1]
 [ext_resource path="res://Props 2/images/default_inventory_background.png" type="Texture" id=2]
 [ext_resource path="res://Props 2/images/item_slot_default_background.png" type="Texture" id=3]
 [ext_resource path="res://Player/Walk (3).png" type="Texture" id=4]
 [ext_resource path="res://Props 2/SlotQuiz.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Props 2/images/item_slot_selected_background.png" type="Texture" id=6]
-[ext_resource path="res://Props 2/images/Items/rabbit.png" type="Texture" id=7]
-[ext_resource path="res://Props 2/images/Items/bird.png" type="Texture" id=8]
+[ext_resource path="res://Props 2/images/Items/apple.png" type="Texture" id=6]
+[ext_resource path="res://Props 2/images/Items/orchid.png" type="Texture" id=7]
+[ext_resource path="res://Props 2/images/Items/tea.png" type="Texture" id=8]
 [ext_resource path="res://Props 2/images/Items/plate.png" type="Texture" id=9]
-[ext_resource path="res://Props 2/images/Items/mask.png" type="Texture" id=10]
+[ext_resource path="res://Props 2/images/Items/water.png" type="Texture" id=10]
 [ext_resource path="res://Props 2/images/Items/cup.png" type="Texture" id=11]
 [ext_resource path="res://Props 2/images/Items/door.png" type="Texture" id=12]
-[ext_resource path="res://Props 2/images/Items/fox.png" type="Texture" id=13]
-[ext_resource path="res://Props 2/images/Items/bowl.png" type="Texture" id=14]
+[ext_resource path="res://Props 2/images/Items/table.png" type="Texture" id=13]
+[ext_resource path="res://Props 2/images/Items/coffee.png" type="Texture" id=14]
 [ext_resource path="res://Props 2/images/thumbs_up.png" type="Texture" id=15]
 [ext_resource path="res://Props 2/Backpack.gd" type="Script" id=16]
+[ext_resource path="res://Props 2/images/Items/spoon.png" type="Texture" id=17]
+[ext_resource path="res://Props 2/images/Items/knife.png" type="Texture" id=18]
+[ext_resource path="res://Props 2/images/Items/fork.png" type="Texture" id=19]
+[ext_resource path="res://Props 2/images/Items/TV.png" type="Texture" id=20]
+[ext_resource path="res://Props 2/images/Items/glass.png" type="Texture" id=21]
+[ext_resource path="res://Props 2/images/Items/sofa.png" type="Texture" id=22]
+[ext_resource path="res://Props 2/images/Items/pitaya.png" type="Texture" id=23]
+[ext_resource path="res://Props 2/images/Items/pineapple.png" type="Texture" id=24]
+[ext_resource path="res://Props 2/images/Items/rose.png" type="Texture" id=25]
+[ext_resource path="res://Props 2/images/Items/lily.png" type="Texture" id=26]
+[ext_resource path="res://Props 2/images/Items/chocolate.png" type="Texture" id=27]
 
 [sub_resource type="StyleBoxTexture" id=1]
 texture = ExtResource( 3 )
 region_rect = Rect2( 0, 0, 18, 18 )
 
 [sub_resource type="StyleBoxTexture" id=2]
-texture = ExtResource( 7 )
+texture = ExtResource( 13 )
 region_rect = Rect2( 0, 0, 500, 500 )
 
 [sub_resource type="StyleBoxTexture" id=3]
-texture = ExtResource( 7 )
+texture = ExtResource( 13 )
 region_rect = Rect2( 0, 0, 500, 500 )
 
 [sub_resource type="StyleBoxFlat" id=4]
@@ -34,38 +45,6 @@ bg_color = Color( 0.576471, 0.054902, 0.054902, 1 )
 
 [sub_resource type="StyleBoxFlat" id=5]
 bg_color = Color( 0.956863, 0.752941, 0.752941, 1 )
-
-[sub_resource type="StyleBoxTexture" id=6]
-texture = ExtResource( 9 )
-region_rect = Rect2( 0, 0, 367, 367 )
-
-[sub_resource type="StyleBoxTexture" id=7]
-texture = ExtResource( 9 )
-region_rect = Rect2( 0, 0, 367, 367 )
-
-[sub_resource type="StyleBoxTexture" id=8]
-texture = ExtResource( 8 )
-region_rect = Rect2( 0, 0, 500, 500 )
-
-[sub_resource type="StyleBoxTexture" id=9]
-texture = ExtResource( 8 )
-region_rect = Rect2( 0, 0, 500, 500 )
-
-[sub_resource type="StyleBoxTexture" id=10]
-texture = ExtResource( 10 )
-region_rect = Rect2( 0, 0, 500, 500 )
-
-[sub_resource type="StyleBoxTexture" id=11]
-texture = ExtResource( 10 )
-region_rect = Rect2( 0, 0, 500, 500 )
-
-[sub_resource type="StyleBoxTexture" id=12]
-texture = ExtResource( 13 )
-region_rect = Rect2( 0, 0, 500, 500 )
-
-[sub_resource type="StyleBoxTexture" id=13]
-texture = ExtResource( 13 )
-region_rect = Rect2( 0, 0, 500, 500 )
 
 [sub_resource type="StyleBoxTexture" id=14]
 texture = ExtResource( 12 )
@@ -75,6 +54,30 @@ region_rect = Rect2( 0, 0, 500, 500 )
 texture = ExtResource( 12 )
 region_rect = Rect2( 0, 0, 500, 500 )
 
+[sub_resource type="StyleBoxTexture" id=8]
+texture = ExtResource( 8 )
+region_rect = Rect2( 0, 0, 500, 500 )
+
+[sub_resource type="StyleBoxTexture" id=9]
+texture = ExtResource( 8 )
+region_rect = Rect2( 0, 0, 500, 500 )
+
+[sub_resource type="StyleBoxTexture" id=12]
+texture = ExtResource( 14 )
+region_rect = Rect2( 0, 0, 500, 500 )
+
+[sub_resource type="StyleBoxTexture" id=13]
+texture = ExtResource( 14 )
+region_rect = Rect2( 0, 0, 500, 500 )
+
+[sub_resource type="StyleBoxTexture" id=18]
+texture = ExtResource( 10 )
+region_rect = Rect2( 0, 0, 210, 210 )
+
+[sub_resource type="StyleBoxTexture" id=19]
+texture = ExtResource( 10 )
+region_rect = Rect2( 0, 0, 210, 210 )
+
 [sub_resource type="StyleBoxTexture" id=16]
 texture = ExtResource( 11 )
 region_rect = Rect2( 0, 0, 500, 500 )
@@ -83,27 +86,117 @@ region_rect = Rect2( 0, 0, 500, 500 )
 texture = ExtResource( 11 )
 region_rect = Rect2( 0, 0, 500, 500 )
 
-[sub_resource type="StyleBoxTexture" id=18]
-texture = ExtResource( 14 )
-region_rect = Rect2( 0, 0, 500, 500 )
+[sub_resource type="StyleBoxTexture" id=6]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 367, 367 )
 
-[sub_resource type="StyleBoxTexture" id=19]
-texture = ExtResource( 14 )
-region_rect = Rect2( 0, 0, 500, 500 )
+[sub_resource type="StyleBoxTexture" id=7]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 367, 367 )
 
 [sub_resource type="StyleBoxTexture" id=20]
-texture = ExtResource( 3 )
-region_rect = Rect2( 0, 0, 18, 18 )
+texture = ExtResource( 17 )
+region_rect = Rect2( 0, 0, 500, 500 )
 
 [sub_resource type="StyleBoxTexture" id=21]
-texture = ExtResource( 6 )
-region_rect = Rect2( 0, 0, 20, 20 )
+texture = ExtResource( 17 )
+region_rect = Rect2( 0, 0, 500, 500 )
 
 [sub_resource type="StyleBoxTexture" id=22]
-texture = ExtResource( 3 )
-region_rect = Rect2( 0, 0, 18, 18 )
+texture = ExtResource( 19 )
+region_rect = Rect2( 0, 0, 500, 500 )
 
 [sub_resource type="StyleBoxTexture" id=23]
+texture = ExtResource( 19 )
+region_rect = Rect2( 0, 0, 500, 500 )
+
+[sub_resource type="StyleBoxTexture" id=24]
+texture = ExtResource( 18 )
+region_rect = Rect2( 0, 0, 500, 500 )
+
+[sub_resource type="StyleBoxTexture" id=25]
+texture = ExtResource( 18 )
+region_rect = Rect2( 0, 0, 500, 500 )
+
+[sub_resource type="StyleBoxTexture" id=26]
+texture = ExtResource( 21 )
+region_rect = Rect2( 0, 0, 500, 500 )
+
+[sub_resource type="StyleBoxTexture" id=27]
+texture = ExtResource( 21 )
+region_rect = Rect2( 0, 0, 500, 500 )
+
+[sub_resource type="StyleBoxTexture" id=42]
+texture = ExtResource( 27 )
+region_rect = Rect2( 0, 0, 500, 500 )
+
+[sub_resource type="StyleBoxTexture" id=43]
+texture = ExtResource( 27 )
+region_rect = Rect2( 0, 0, 500, 500 )
+
+[sub_resource type="StyleBoxTexture" id=32]
+texture = ExtResource( 6 )
+region_rect = Rect2( 0, 0, 500, 500 )
+
+[sub_resource type="StyleBoxTexture" id=33]
+texture = ExtResource( 6 )
+region_rect = Rect2( 0, 0, 500, 500 )
+
+[sub_resource type="StyleBoxTexture" id=34]
+texture = ExtResource( 23 )
+region_rect = Rect2( 0, 0, 500, 500 )
+
+[sub_resource type="StyleBoxTexture" id=35]
+texture = ExtResource( 23 )
+region_rect = Rect2( 0, 0, 500, 500 )
+
+[sub_resource type="StyleBoxTexture" id=36]
+texture = ExtResource( 24 )
+region_rect = Rect2( 0, 0, 500, 500 )
+
+[sub_resource type="StyleBoxTexture" id=37]
+texture = ExtResource( 24 )
+region_rect = Rect2( 0, 0, 500, 500 )
+
+[sub_resource type="StyleBoxTexture" id=28]
+texture = ExtResource( 20 )
+region_rect = Rect2( 0, 0, 500, 500 )
+
+[sub_resource type="StyleBoxTexture" id=29]
+texture = ExtResource( 20 )
+region_rect = Rect2( 0, 0, 500, 500 )
+
+[sub_resource type="StyleBoxTexture" id=30]
+texture = ExtResource( 22 )
+region_rect = Rect2( 0, 0, 500, 500 )
+
+[sub_resource type="StyleBoxTexture" id=31]
+texture = ExtResource( 22 )
+region_rect = Rect2( 0, 0, 500, 500 )
+
+[sub_resource type="StyleBoxTexture" id=44]
+texture = ExtResource( 25 )
+region_rect = Rect2( 0, 0, 500, 500 )
+
+[sub_resource type="StyleBoxTexture" id=39]
+texture = ExtResource( 25 )
+region_rect = Rect2( 0, 0, 500, 500 )
+
+[sub_resource type="StyleBoxTexture" id=40]
+texture = ExtResource( 26 )
+region_rect = Rect2( 0, 0, 500, 500 )
+
+[sub_resource type="StyleBoxTexture" id=41]
+texture = ExtResource( 26 )
+region_rect = Rect2( 0, 0, 500, 500 )
+
+[sub_resource type="StyleBoxTexture" id=10]
+texture = ExtResource( 7 )
+region_rect = Rect2( 0, 0, 500, 500 )
+
+[sub_resource type="StyleBoxTexture" id=11]
+texture = ExtResource( 7 )
+region_rect = Rect2( 0, 0, 500, 500 )
 
 [node name="Backpack" type="Node2D"]
 position = Vector2( -2.03827, 3.05746 )
@@ -181,10 +274,10 @@ __meta__ = {
 [node name="GridContainer" type="GridContainer" parent="."]
 anchor_top = 0.000311635
 anchor_bottom = 0.000311635
-margin_left = 458.088
-margin_top = 186.813
-margin_right = 566.088
-margin_bottom = 273.813
+margin_left = 458.0
+margin_top = 187.0
+margin_right = 566.0
+margin_bottom = 274.0
 rect_scale = Vector2( 3, 3 )
 rect_pivot_offset = Vector2( 1, 1 )
 custom_constants/vseparation = 5
@@ -194,14 +287,14 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="rabbit" type="Panel" parent="GridContainer"]
+[node name="table" type="Panel" parent="GridContainer"]
 margin_right = 18.0
 margin_bottom = 18.0
 rect_min_size = Vector2( 18, 18 )
 rect_pivot_offset = Vector2( 1, 1 )
 custom_styles/panel = SubResource( 1 )
 
-[node name="Uncollected" type="Panel" parent="GridContainer/rabbit"]
+[node name="Uncollected" type="Panel" parent="GridContainer/table"]
 modulate = Color( 0, 0, 0, 1 )
 margin_right = 17.0
 margin_bottom = 17.0
@@ -211,7 +304,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Collected" type="Panel" parent="GridContainer/rabbit"]
+[node name="Collected" type="Panel" parent="GridContainer/table"]
 margin_right = 17.0
 margin_bottom = 17.0
 custom_styles/panel = SubResource( 3 )
@@ -219,208 +312,10 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Node2D" type="Node2D" parent="GridContainer/rabbit"]
+[node name="Node2D" type="Node2D" parent="GridContainer/table"]
 z_index = 1
 
-[node name="rabbit" type="Button" parent="GridContainer/rabbit/Node2D"]
-modulate = Color( 1, 1, 1, 0 )
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -1.0
-margin_top = -1.0
-margin_right = 18.0
-margin_bottom = 19.0
-custom_styles/hover = SubResource( 4 )
-custom_styles/pressed = SubResource( 5 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="plate" type="Panel" parent="GridContainer"]
-margin_left = 22.0
-margin_right = 40.0
-margin_bottom = 18.0
-rect_min_size = Vector2( 18, 18 )
-rect_pivot_offset = Vector2( 1, 1 )
-custom_styles/panel = SubResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Uncollected" type="Panel" parent="GridContainer/plate"]
-modulate = Color( 0, 0, 0, 1 )
-margin_left = 2.0
-margin_top = 2.0
-margin_right = 16.0
-margin_bottom = 16.0
-rect_pivot_offset = Vector2( -108.441, 13.8935 )
-custom_styles/panel = SubResource( 6 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Collected" type="Panel" parent="GridContainer/plate"]
-margin_left = 2.0
-margin_top = 2.0
-margin_right = 16.0
-margin_bottom = 16.0
-custom_styles/panel = SubResource( 7 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Node2D" type="Node2D" parent="GridContainer/plate"]
-z_index = 1
-
-[node name="plate" type="Button" parent="GridContainer/plate/Node2D"]
-modulate = Color( 1, 1, 1, 0 )
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -1.0
-margin_top = -1.0
-margin_right = 18.0
-margin_bottom = 19.0
-custom_styles/hover = SubResource( 4 )
-custom_styles/pressed = SubResource( 5 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="bird" type="Panel" parent="GridContainer"]
-margin_left = 44.0
-margin_right = 62.0
-margin_bottom = 18.0
-rect_min_size = Vector2( 18, 18 )
-rect_pivot_offset = Vector2( 1, 1 )
-custom_styles/panel = SubResource( 1 )
-
-[node name="Uncollected" type="Panel" parent="GridContainer/bird"]
-modulate = Color( 0, 0, 0, 1 )
-margin_right = 17.0
-margin_bottom = 18.0
-rect_pivot_offset = Vector2( -108.441, 13.8935 )
-custom_styles/panel = SubResource( 8 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Collected" type="Panel" parent="GridContainer/bird"]
-margin_right = 17.0
-margin_bottom = 18.0
-custom_styles/panel = SubResource( 9 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Node2D" type="Node2D" parent="GridContainer/bird"]
-z_index = 1
-
-[node name="bird" type="Button" parent="GridContainer/bird/Node2D"]
-modulate = Color( 1, 1, 1, 0 )
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -1.0
-margin_top = -1.0
-margin_right = 18.0
-margin_bottom = 19.0
-custom_styles/hover = SubResource( 4 )
-custom_styles/pressed = SubResource( 5 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="mask" type="Panel" parent="GridContainer"]
-margin_left = 66.0
-margin_right = 84.0
-margin_bottom = 18.0
-rect_min_size = Vector2( 18, 18 )
-rect_pivot_offset = Vector2( 1, 1 )
-custom_styles/panel = SubResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Uncollected" type="Panel" parent="GridContainer/mask"]
-modulate = Color( 0, 0, 0, 1 )
-margin_right = 17.0
-margin_bottom = 17.0
-rect_pivot_offset = Vector2( -108.441, 13.8935 )
-custom_styles/panel = SubResource( 10 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Collected" type="Panel" parent="GridContainer/mask"]
-margin_top = -0.416626
-margin_right = 17.0
-margin_bottom = 16.5834
-custom_styles/panel = SubResource( 11 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Node2D" type="Node2D" parent="GridContainer/mask"]
-z_index = 1
-
-[node name="mask" type="Button" parent="GridContainer/mask/Node2D"]
-modulate = Color( 1, 1, 1, 0 )
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -1.0
-margin_top = -1.0
-margin_right = 18.0
-margin_bottom = 19.0
-custom_styles/hover = SubResource( 4 )
-custom_styles/pressed = SubResource( 5 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="fox" type="Panel" parent="GridContainer"]
-margin_left = 88.0
-margin_right = 106.0
-margin_bottom = 18.0
-rect_min_size = Vector2( 18, 18 )
-rect_pivot_offset = Vector2( 1, 1 )
-custom_styles/panel = SubResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Uncollected" type="Panel" parent="GridContainer/fox"]
-modulate = Color( 0, 0, 0, 1 )
-margin_left = 1.0
-margin_top = -1.0
-margin_right = 17.0
-margin_bottom = 20.0
-rect_pivot_offset = Vector2( -108.441, 13.8935 )
-custom_styles/panel = SubResource( 12 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Collected" type="Panel" parent="GridContainer/fox"]
-margin_left = 1.0
-margin_top = -1.0
-margin_right = 17.0
-margin_bottom = 20.0
-custom_styles/panel = SubResource( 13 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Node2D" type="Node2D" parent="GridContainer/fox"]
-z_index = 1
-
-[node name="fox" type="Button" parent="GridContainer/fox/Node2D"]
+[node name="table" type="Button" parent="GridContainer/table/Node2D"]
 modulate = Color( 1, 1, 1, 0 )
 anchor_left = 0.5
 anchor_top = 0.5
@@ -437,9 +332,9 @@ __meta__ = {
 }
 
 [node name="door" type="Panel" parent="GridContainer"]
-margin_top = 23.0
-margin_right = 18.0
-margin_bottom = 41.0
+margin_left = 22.0
+margin_right = 40.0
+margin_bottom = 18.0
 rect_min_size = Vector2( 18, 18 )
 rect_pivot_offset = Vector2( 1, 1 )
 custom_styles/panel = SubResource( 1 )
@@ -488,10 +383,162 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="tea" type="Panel" parent="GridContainer"]
+margin_left = 44.0
+margin_right = 62.0
+margin_bottom = 18.0
+rect_min_size = Vector2( 18, 18 )
+rect_pivot_offset = Vector2( 1, 1 )
+custom_styles/panel = SubResource( 1 )
+
+[node name="Uncollected" type="Panel" parent="GridContainer/tea"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 2.0
+margin_top = 2.0
+margin_right = 17.0
+margin_bottom = 18.0
+rect_pivot_offset = Vector2( -108.441, 13.8935 )
+custom_styles/panel = SubResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Collected" type="Panel" parent="GridContainer/tea"]
+margin_left = 2.0
+margin_top = 2.0
+margin_right = 17.0
+margin_bottom = 18.0
+custom_styles/panel = SubResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Node2D" type="Node2D" parent="GridContainer/tea"]
+z_index = 1
+
+[node name="tea" type="Button" parent="GridContainer/tea/Node2D"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -1.0
+margin_top = -1.0
+margin_right = 18.0
+margin_bottom = 19.0
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="coffee" type="Panel" parent="GridContainer"]
+margin_left = 66.0
+margin_right = 84.0
+margin_bottom = 18.0
+rect_min_size = Vector2( 18, 18 )
+rect_pivot_offset = Vector2( 1, 1 )
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Uncollected" type="Panel" parent="GridContainer/coffee"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 1.0
+margin_top = -1.0
+margin_right = 17.0
+margin_bottom = 17.0
+rect_pivot_offset = Vector2( -108.441, 13.8935 )
+custom_styles/panel = SubResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Collected" type="Panel" parent="GridContainer/coffee"]
+margin_left = 1.0
+margin_top = -1.0
+margin_right = 17.0
+margin_bottom = 17.0
+custom_styles/panel = SubResource( 13 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Node2D" type="Node2D" parent="GridContainer/coffee"]
+z_index = 1
+
+[node name="coffee" type="Button" parent="GridContainer/coffee/Node2D"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -1.0
+margin_top = -1.0
+margin_right = 18.0
+margin_bottom = 19.0
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="water" type="Panel" parent="GridContainer"]
+margin_left = 88.0
+margin_right = 106.0
+margin_bottom = 18.0
+rect_min_size = Vector2( 18, 18 )
+rect_pivot_offset = Vector2( 1, 1 )
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Uncollected" type="Panel" parent="GridContainer/water"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 2.24973
+margin_top = 1.15005
+margin_right = 16.2497
+margin_bottom = 16.15
+rect_pivot_offset = Vector2( -108.441, 13.8935 )
+custom_styles/panel = SubResource( 18 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Collected" type="Panel" parent="GridContainer/water"]
+margin_left = 2.20039
+margin_top = 0.900299
+margin_right = 16.2004
+margin_bottom = 15.9003
+custom_styles/panel = SubResource( 19 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Node2D" type="Node2D" parent="GridContainer/water"]
+z_index = 1
+
+[node name="water" type="Button" parent="GridContainer/water/Node2D"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -1.0
+margin_top = -1.0
+margin_right = 18.0
+margin_bottom = 19.0
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="cup" type="Panel" parent="GridContainer"]
-margin_left = 22.0
 margin_top = 23.0
-margin_right = 40.0
+margin_right = 18.0
 margin_bottom = 41.0
 rect_min_size = Vector2( 18, 18 )
 rect_pivot_offset = Vector2( 1, 1 )
@@ -539,10 +586,10 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="bowl" type="Panel" parent="GridContainer"]
-margin_left = 44.0
+[node name="plate" type="Panel" parent="GridContainer"]
+margin_left = 22.0
 margin_top = 23.0
-margin_right = 62.0
+margin_right = 40.0
 margin_bottom = 41.0
 rect_min_size = Vector2( 18, 18 )
 rect_pivot_offset = Vector2( 1, 1 )
@@ -551,30 +598,32 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Uncollected" type="Panel" parent="GridContainer/bowl"]
+[node name="Uncollected" type="Panel" parent="GridContainer/plate"]
 modulate = Color( 0, 0, 0, 1 )
-margin_left = 1.0
-margin_right = 17.0
-margin_bottom = 18.0
+margin_left = 2.0
+margin_top = 2.0
+margin_right = 16.0
+margin_bottom = 16.0
 rect_pivot_offset = Vector2( -108.441, 13.8935 )
-custom_styles/panel = SubResource( 18 )
+custom_styles/panel = SubResource( 6 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Collected" type="Panel" parent="GridContainer/bowl"]
-margin_left = 1.0
-margin_right = 17.0
-margin_bottom = 18.0
-custom_styles/panel = SubResource( 19 )
+[node name="Collected" type="Panel" parent="GridContainer/plate"]
+margin_left = 2.0
+margin_top = 2.0
+margin_right = 16.0
+margin_bottom = 16.0
+custom_styles/panel = SubResource( 7 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Node2D" type="Node2D" parent="GridContainer/bowl"]
+[node name="Node2D" type="Node2D" parent="GridContainer/plate"]
 z_index = 1
 
-[node name="bowl" type="Button" parent="GridContainer/bowl/Node2D"]
+[node name="plate" type="Button" parent="GridContainer/plate/Node2D"]
 modulate = Color( 1, 1, 1, 0 )
 anchor_left = 0.5
 anchor_top = 0.5
@@ -590,7 +639,58 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="slot4" type="Panel" parent="GridContainer"]
+[node name="spoon" type="Panel" parent="GridContainer"]
+margin_left = 44.0
+margin_top = 23.0
+margin_right = 62.0
+margin_bottom = 41.0
+rect_min_size = Vector2( 18, 18 )
+rect_pivot_offset = Vector2( 1, 1 )
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Uncollected" type="Panel" parent="GridContainer/spoon"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 1.0
+margin_right = 17.0
+margin_bottom = 18.0
+rect_pivot_offset = Vector2( -108.441, 13.8935 )
+custom_styles/panel = SubResource( 20 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Collected" type="Panel" parent="GridContainer/spoon"]
+margin_left = 1.0
+margin_right = 17.0
+margin_bottom = 18.0
+custom_styles/panel = SubResource( 21 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Node2D" type="Node2D" parent="GridContainer/spoon"]
+z_index = 1
+
+[node name="spoon" type="Button" parent="GridContainer/spoon/Node2D"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -1.0
+margin_top = -1.0
+margin_right = 18.0
+margin_bottom = 19.0
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="fork" type="Panel" parent="GridContainer"]
 margin_left = 66.0
 margin_top = 23.0
 margin_right = 84.0
@@ -602,36 +702,46 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button" type="Button" parent="GridContainer/slot4"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -10.0
-margin_top = -10.0
-margin_right = 9.0
-margin_bottom = 10.0
-custom_styles/hover = SubResource( 20 )
-custom_styles/pressed = SubResource( 21 )
-custom_styles/normal = SubResource( 22 )
-custom_colors/font_color_disabled = Color( 0.929412, 0.054902, 0.054902, 1 )
+[node name="Uncollected" type="Panel" parent="GridContainer/fork"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 1.0
+margin_right = 17.0
+margin_bottom = 18.0
+rect_pivot_offset = Vector2( -108.441, 13.8935 )
+custom_styles/panel = SubResource( 22 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Uncontrolled" type="Panel" parent="GridContainer/slot4"]
-modulate = Color( 0, 0, 0, 1 )
-margin_left = -0.310928
-margin_top = -0.877384
-margin_right = 16.6891
-margin_bottom = 18.1226
-rect_pivot_offset = Vector2( -108.441, 13.8935 )
+[node name="Collected" type="Panel" parent="GridContainer/fork"]
+margin_left = 1.0
+margin_right = 17.0
+margin_bottom = 18.0
 custom_styles/panel = SubResource( 23 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="slot5" type="Panel" parent="GridContainer"]
+[node name="Node2D" type="Node2D" parent="GridContainer/fork"]
+z_index = 1
+
+[node name="fork" type="Button" parent="GridContainer/fork/Node2D"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -1.0
+margin_top = -1.0
+margin_right = 18.0
+margin_bottom = 19.0
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="knife" type="Panel" parent="GridContainer"]
 margin_left = 88.0
 margin_top = 23.0
 margin_right = 106.0
@@ -639,50 +749,100 @@ margin_bottom = 41.0
 rect_min_size = Vector2( 18, 18 )
 rect_pivot_offset = Vector2( 1, 1 )
 custom_styles/panel = SubResource( 1 )
-
-[node name="Button" type="Button" parent="GridContainer/slot5"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -10.0
-margin_top = -10.0
-margin_right = 9.0
-margin_bottom = 10.0
-custom_styles/hover = SubResource( 20 )
-custom_styles/pressed = SubResource( 21 )
-custom_styles/normal = SubResource( 22 )
-custom_colors/font_color_disabled = Color( 0.929412, 0.054902, 0.054902, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="slot6" type="Panel" parent="GridContainer"]
+[node name="Uncollected" type="Panel" parent="GridContainer/knife"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 1.0
+margin_right = 17.0
+margin_bottom = 18.0
+rect_pivot_offset = Vector2( -108.441, 13.8935 )
+custom_styles/panel = SubResource( 24 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Collected" type="Panel" parent="GridContainer/knife"]
+margin_left = 1.0
+margin_right = 17.0
+margin_bottom = 18.0
+custom_styles/panel = SubResource( 25 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Node2D" type="Node2D" parent="GridContainer/knife"]
+z_index = 1
+
+[node name="knife" type="Button" parent="GridContainer/knife/Node2D"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -1.0
+margin_top = -1.0
+margin_right = 18.0
+margin_bottom = 19.0
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="glass" type="Panel" parent="GridContainer"]
 margin_top = 46.0
 margin_right = 18.0
 margin_bottom = 64.0
 rect_min_size = Vector2( 18, 18 )
 rect_pivot_offset = Vector2( 1, 1 )
 custom_styles/panel = SubResource( 1 )
-
-[node name="Button" type="Button" parent="GridContainer/slot6"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -10.0
-margin_top = -10.0
-margin_right = 9.0
-margin_bottom = 10.0
-custom_styles/hover = SubResource( 20 )
-custom_styles/pressed = SubResource( 21 )
-custom_styles/normal = SubResource( 22 )
-custom_colors/font_color_disabled = Color( 0.929412, 0.054902, 0.054902, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="slot7" type="Panel" parent="GridContainer"]
+[node name="Uncollected" type="Panel" parent="GridContainer/glass"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 1.0
+margin_right = 17.0
+margin_bottom = 18.0
+rect_pivot_offset = Vector2( -108.441, 13.8935 )
+custom_styles/panel = SubResource( 26 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Collected" type="Panel" parent="GridContainer/glass"]
+margin_left = 1.0
+margin_right = 17.0
+margin_bottom = 18.0
+custom_styles/panel = SubResource( 27 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Node2D" type="Node2D" parent="GridContainer/glass"]
+z_index = 1
+
+[node name="glass" type="Button" parent="GridContainer/glass/Node2D"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -1.0
+margin_top = -1.0
+margin_right = 18.0
+margin_bottom = 19.0
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="chocolate" type="Panel" parent="GridContainer"]
 margin_left = 22.0
 margin_top = 46.0
 margin_right = 40.0
@@ -690,25 +850,50 @@ margin_bottom = 64.0
 rect_min_size = Vector2( 18, 18 )
 rect_pivot_offset = Vector2( 1, 1 )
 custom_styles/panel = SubResource( 1 )
-
-[node name="Button" type="Button" parent="GridContainer/slot7"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -10.0
-margin_top = -10.0
-margin_right = 9.0
-margin_bottom = 10.0
-custom_styles/hover = SubResource( 20 )
-custom_styles/pressed = SubResource( 21 )
-custom_styles/normal = SubResource( 22 )
-custom_colors/font_color_disabled = Color( 0.929412, 0.054902, 0.054902, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="slot8" type="Panel" parent="GridContainer"]
+[node name="Uncollected" type="Panel" parent="GridContainer/chocolate"]
+modulate = Color( 0, 0, 0, 1 )
+margin_top = -1.0
+margin_right = 18.0
+margin_bottom = 19.0
+rect_pivot_offset = Vector2( -108.441, 13.8935 )
+custom_styles/panel = SubResource( 42 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Collected" type="Panel" parent="GridContainer/chocolate"]
+margin_top = -1.0
+margin_right = 18.0
+margin_bottom = 19.0
+custom_styles/panel = SubResource( 43 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Node2D" type="Node2D" parent="GridContainer/chocolate"]
+z_index = 1
+
+[node name="chocolate" type="Button" parent="GridContainer/chocolate/Node2D"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -1.0
+margin_top = -1.0
+margin_right = 18.0
+margin_bottom = 19.0
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="apple" type="Panel" parent="GridContainer"]
 margin_left = 44.0
 margin_top = 46.0
 margin_right = 62.0
@@ -716,25 +901,50 @@ margin_bottom = 64.0
 rect_min_size = Vector2( 18, 18 )
 rect_pivot_offset = Vector2( 1, 1 )
 custom_styles/panel = SubResource( 1 )
-
-[node name="Button" type="Button" parent="GridContainer/slot8"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -10.0
-margin_top = -10.0
-margin_right = 9.0
-margin_bottom = 10.0
-custom_styles/hover = SubResource( 20 )
-custom_styles/pressed = SubResource( 21 )
-custom_styles/normal = SubResource( 22 )
-custom_colors/font_color_disabled = Color( 0.929412, 0.054902, 0.054902, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="slot9" type="Panel" parent="GridContainer"]
+[node name="Uncollected" type="Panel" parent="GridContainer/apple"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = -1.52588e-05
+margin_right = 18.0
+margin_bottom = 18.0
+rect_pivot_offset = Vector2( -108.441, 13.8935 )
+custom_styles/panel = SubResource( 32 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Collected" type="Panel" parent="GridContainer/apple"]
+margin_top = 0.333336
+margin_right = 18.0
+margin_bottom = 18.3333
+custom_styles/panel = SubResource( 33 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Node2D" type="Node2D" parent="GridContainer/apple"]
+z_index = 1
+
+[node name="apple" type="Button" parent="GridContainer/apple/Node2D"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -1.0
+margin_top = -1.0
+margin_right = 18.0
+margin_bottom = 19.0
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="pitaya" type="Panel" parent="GridContainer"]
 margin_left = 66.0
 margin_top = 46.0
 margin_right = 84.0
@@ -742,25 +952,50 @@ margin_bottom = 64.0
 rect_min_size = Vector2( 18, 18 )
 rect_pivot_offset = Vector2( 1, 1 )
 custom_styles/panel = SubResource( 1 )
-
-[node name="Button" type="Button" parent="GridContainer/slot9"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -10.0
-margin_top = -10.0
-margin_right = 9.0
-margin_bottom = 10.0
-custom_styles/hover = SubResource( 20 )
-custom_styles/pressed = SubResource( 21 )
-custom_styles/normal = SubResource( 22 )
-custom_colors/font_color_disabled = Color( 0.929412, 0.054902, 0.054902, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="slot10" type="Panel" parent="GridContainer"]
+[node name="Uncollected" type="Panel" parent="GridContainer/pitaya"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 1.0
+margin_right = 17.0
+margin_bottom = 18.0
+rect_pivot_offset = Vector2( -108.441, 13.8935 )
+custom_styles/panel = SubResource( 34 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Collected" type="Panel" parent="GridContainer/pitaya"]
+margin_left = 1.0
+margin_right = 17.0
+margin_bottom = 18.0
+custom_styles/panel = SubResource( 35 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Node2D" type="Node2D" parent="GridContainer/pitaya"]
+z_index = 1
+
+[node name="pitaya" type="Button" parent="GridContainer/pitaya/Node2D"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -1.0
+margin_top = -1.0
+margin_right = 18.0
+margin_bottom = 19.0
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="pineapple" type="Panel" parent="GridContainer"]
 margin_left = 88.0
 margin_top = 46.0
 margin_right = 106.0
@@ -768,50 +1003,102 @@ margin_bottom = 64.0
 rect_min_size = Vector2( 18, 18 )
 rect_pivot_offset = Vector2( 1, 1 )
 custom_styles/panel = SubResource( 1 )
-
-[node name="Button" type="Button" parent="GridContainer/slot10"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -10.0
-margin_top = -10.0
-margin_right = 9.0
-margin_bottom = 10.0
-custom_styles/hover = SubResource( 20 )
-custom_styles/pressed = SubResource( 21 )
-custom_styles/normal = SubResource( 22 )
-custom_colors/font_color_disabled = Color( 0.929412, 0.054902, 0.054902, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="slot11" type="Panel" parent="GridContainer"]
+[node name="Uncollected" type="Panel" parent="GridContainer/pineapple"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 1.0
+margin_right = 17.0
+margin_bottom = 18.0
+rect_pivot_offset = Vector2( -108.441, 13.8935 )
+custom_styles/panel = SubResource( 36 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Collected" type="Panel" parent="GridContainer/pineapple"]
+margin_left = 1.0
+margin_right = 17.0
+margin_bottom = 18.0
+custom_styles/panel = SubResource( 37 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Node2D" type="Node2D" parent="GridContainer/pineapple"]
+z_index = 1
+
+[node name="pineapple" type="Button" parent="GridContainer/pineapple/Node2D"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -1.0
+margin_top = -1.0
+margin_right = 18.0
+margin_bottom = 19.0
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TV" type="Panel" parent="GridContainer"]
 margin_top = 69.0
 margin_right = 18.0
 margin_bottom = 87.0
 rect_min_size = Vector2( 18, 18 )
 rect_pivot_offset = Vector2( 1, 1 )
 custom_styles/panel = SubResource( 1 )
-
-[node name="Button" type="Button" parent="GridContainer/slot11"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -10.0
-margin_top = -10.0
-margin_right = 9.0
-margin_bottom = 10.0
-custom_styles/hover = SubResource( 20 )
-custom_styles/pressed = SubResource( 21 )
-custom_styles/normal = SubResource( 22 )
-custom_colors/font_color_disabled = Color( 0.929412, 0.054902, 0.054902, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="slot12" type="Panel" parent="GridContainer"]
+[node name="Uncollected" type="Panel" parent="GridContainer/TV"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = -0.666656
+margin_top = -1.33334
+margin_right = 18.3333
+margin_bottom = 18.6667
+rect_pivot_offset = Vector2( -108.441, 13.8935 )
+custom_styles/panel = SubResource( 28 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Collected" type="Panel" parent="GridContainer/TV"]
+margin_left = -1.0
+margin_top = -1.0
+margin_right = 18.0
+margin_bottom = 19.0
+custom_styles/panel = SubResource( 29 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Node2D" type="Node2D" parent="GridContainer/TV"]
+z_index = 1
+
+[node name="TV" type="Button" parent="GridContainer/TV/Node2D"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -1.0
+margin_top = -1.0
+margin_right = 18.0
+margin_bottom = 19.0
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sofa" type="Panel" parent="GridContainer"]
 margin_left = 22.0
 margin_top = 69.0
 margin_right = 40.0
@@ -819,25 +1106,52 @@ margin_bottom = 87.0
 rect_min_size = Vector2( 18, 18 )
 rect_pivot_offset = Vector2( 1, 1 )
 custom_styles/panel = SubResource( 1 )
-
-[node name="Button" type="Button" parent="GridContainer/slot12"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -10.0
-margin_top = -10.0
-margin_right = 9.0
-margin_bottom = 10.0
-custom_styles/hover = SubResource( 20 )
-custom_styles/pressed = SubResource( 21 )
-custom_styles/normal = SubResource( 22 )
-custom_colors/font_color_disabled = Color( 0.929412, 0.054902, 0.054902, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="slot13" type="Panel" parent="GridContainer"]
+[node name="Uncollected" type="Panel" parent="GridContainer/sofa"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = -0.333313
+margin_top = -1.33334
+margin_right = 18.6667
+margin_bottom = 18.6667
+rect_pivot_offset = Vector2( -108.441, 13.8935 )
+custom_styles/panel = SubResource( 30 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Collected" type="Panel" parent="GridContainer/sofa"]
+margin_left = -0.333344
+margin_top = -1.0
+margin_right = 18.6667
+margin_bottom = 19.0
+custom_styles/panel = SubResource( 31 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Node2D" type="Node2D" parent="GridContainer/sofa"]
+z_index = 1
+
+[node name="sofa" type="Button" parent="GridContainer/sofa/Node2D"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -1.0
+margin_top = -1.0
+margin_right = 18.0
+margin_bottom = 19.0
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="rose" type="Panel" parent="GridContainer"]
 margin_left = 44.0
 margin_top = 69.0
 margin_right = 62.0
@@ -845,25 +1159,49 @@ margin_bottom = 87.0
 rect_min_size = Vector2( 18, 18 )
 rect_pivot_offset = Vector2( 1, 1 )
 custom_styles/panel = SubResource( 1 )
-
-[node name="Button" type="Button" parent="GridContainer/slot13"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -10.0
-margin_top = -10.0
-margin_right = 9.0
-margin_bottom = 10.0
-custom_styles/hover = SubResource( 20 )
-custom_styles/pressed = SubResource( 21 )
-custom_styles/normal = SubResource( 22 )
-custom_colors/font_color_disabled = Color( 0.929412, 0.054902, 0.054902, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="slot14" type="Panel" parent="GridContainer"]
+[node name="Uncollected" type="Panel" parent="GridContainer/rose"]
+modulate = Color( 0, 0, 0, 1 )
+margin_right = 18.0
+margin_bottom = 18.0
+rect_pivot_offset = Vector2( -108.441, 13.8935 )
+custom_styles/panel = SubResource( 44 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Collected" type="Panel" parent="GridContainer/rose"]
+margin_top = 0.249756
+margin_right = 18.0
+margin_bottom = 18.2498
+custom_styles/panel = SubResource( 39 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Node2D" type="Node2D" parent="GridContainer/rose"]
+z_index = 1
+
+[node name="rose" type="Button" parent="GridContainer/rose/Node2D"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -1.0
+margin_top = -1.0
+margin_right = 18.0
+margin_bottom = 19.0
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lily" type="Panel" parent="GridContainer"]
 margin_left = 66.0
 margin_top = 69.0
 margin_right = 84.0
@@ -871,25 +1209,52 @@ margin_bottom = 87.0
 rect_min_size = Vector2( 18, 18 )
 rect_pivot_offset = Vector2( 1, 1 )
 custom_styles/panel = SubResource( 1 )
-
-[node name="Button" type="Button" parent="GridContainer/slot14"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -10.0
-margin_top = -10.0
-margin_right = 9.0
-margin_bottom = 10.0
-custom_styles/hover = SubResource( 20 )
-custom_styles/pressed = SubResource( 21 )
-custom_styles/normal = SubResource( 22 )
-custom_colors/font_color_disabled = Color( 0.929412, 0.054902, 0.054902, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="slot15" type="Panel" parent="GridContainer"]
+[node name="Uncollected" type="Panel" parent="GridContainer/lily"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = -0.666656
+margin_top = -1.33334
+margin_right = 18.3333
+margin_bottom = 18.6667
+rect_pivot_offset = Vector2( -108.441, 13.8935 )
+custom_styles/panel = SubResource( 40 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Collected" type="Panel" parent="GridContainer/lily"]
+margin_left = -1.0
+margin_top = -1.0
+margin_right = 18.0
+margin_bottom = 19.0
+custom_styles/panel = SubResource( 41 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Node2D" type="Node2D" parent="GridContainer/lily"]
+z_index = 1
+
+[node name="lily" type="Button" parent="GridContainer/lily/Node2D"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -1.0
+margin_top = -1.0
+margin_right = 18.0
+margin_bottom = 19.0
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="orchid" type="Panel" parent="GridContainer"]
 margin_left = 88.0
 margin_top = 69.0
 margin_right = 106.0
@@ -897,20 +1262,43 @@ margin_bottom = 87.0
 rect_min_size = Vector2( 18, 18 )
 rect_pivot_offset = Vector2( 1, 1 )
 custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="Button" type="Button" parent="GridContainer/slot15"]
+[node name="Uncollected" type="Panel" parent="GridContainer/orchid"]
+modulate = Color( 0, 0, 0, 1 )
+margin_right = 17.0
+margin_bottom = 16.0
+rect_pivot_offset = Vector2( -108.441, 13.8935 )
+custom_styles/panel = SubResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Collected" type="Panel" parent="GridContainer/orchid"]
+margin_right = 17.0
+margin_bottom = 16.0
+custom_styles/panel = SubResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Node2D" type="Node2D" parent="GridContainer/orchid"]
+z_index = 1
+
+[node name="orchid" type="Button" parent="GridContainer/orchid/Node2D"]
+modulate = Color( 1, 1, 1, 0 )
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -10.0
-margin_top = -10.0
-margin_right = 9.0
-margin_bottom = 10.0
-custom_styles/hover = SubResource( 20 )
-custom_styles/pressed = SubResource( 21 )
-custom_styles/normal = SubResource( 22 )
-custom_colors/font_color_disabled = Color( 0.929412, 0.054902, 0.054902, 1 )
+margin_left = -1.0
+margin_top = -1.0
+margin_right = 18.0
+margin_bottom = 19.0
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -944,16 +1332,4 @@ __meta__ = {
 }
 
 [connection signal="button_up" from="Background/Close_Icon" to="." method="_on_Close_Icon_button_up"]
-[connection signal="button_up" from="GridContainer/slot4/Button" to="Node2D/SlotQuiz" method="_on_trigger_button_up"]
-[connection signal="button_up" from="GridContainer/slot5/Button" to="Node2D/SlotQuiz" method="_on_trigger_button_up"]
-[connection signal="button_up" from="GridContainer/slot6/Button" to="Node2D/SlotQuiz" method="_on_trigger_button_up"]
-[connection signal="button_up" from="GridContainer/slot7/Button" to="Node2D/SlotQuiz" method="_on_trigger_button_up"]
-[connection signal="button_up" from="GridContainer/slot8/Button" to="Node2D/SlotQuiz" method="_on_trigger_button_up"]
-[connection signal="button_up" from="GridContainer/slot9/Button" to="Node2D/SlotQuiz" method="_on_trigger_button_up"]
-[connection signal="button_up" from="GridContainer/slot10/Button" to="Node2D/SlotQuiz" method="_on_trigger_button_up"]
-[connection signal="button_up" from="GridContainer/slot11/Button" to="Node2D/SlotQuiz" method="_on_trigger_button_up"]
-[connection signal="button_up" from="GridContainer/slot12/Button" to="Node2D/SlotQuiz" method="_on_trigger_button_up"]
-[connection signal="button_up" from="GridContainer/slot13/Button" to="Node2D/SlotQuiz" method="_on_trigger_button_up"]
-[connection signal="button_up" from="GridContainer/slot14/Button" to="Node2D/SlotQuiz" method="_on_trigger_button_up"]
-[connection signal="button_up" from="GridContainer/slot15/Button" to="Node2D/SlotQuiz" method="_on_trigger_button_up"]
 [connection signal="visibility_changed" from="CongratsMsg" to="Node2D/SlotQuiz" method="_on_CongratsMsg_visibility_changed"]
