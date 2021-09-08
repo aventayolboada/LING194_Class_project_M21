@@ -1,4 +1,4 @@
-[gd_scene load_steps=114 format=2]
+[gd_scene load_steps=116 format=2]
 
 [ext_resource path="res://Player/assets/spriteanimations/Walk (6).png" type="Texture" id=1]
 [ext_resource path="res://Player/assets/spriteanimations/Idle (2).png" type="Texture" id=2]
@@ -91,6 +91,8 @@
 [ext_resource path="res://Player/assets/spriteanimations/Jump (1).png" type="Texture" id=89]
 [ext_resource path="res://Player/assets/spriteanimations/Jump (2).png" type="Texture" id=90]
 [ext_resource path="res://Player/Player3.gd" type="Script" id=91]
+[ext_resource path="res://Player/assets/audio/FireWorks-Double-Pop-www.fesliyanstudios.com.mp3" type="AudioStream" id=92]
+[ext_resource path="res://Player/assets/audio/Fireworks-Crackling-www.fesliyanstudios.com.mp3" type="AudioStream" id=93]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 15.5644, 32.594 )
@@ -171,6 +173,11 @@ animations = [ {
 "name": "idle",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 89 ), ExtResource( 90 ), ExtResource( 47 ), ExtResource( 36 ), ExtResource( 50 ), ExtResource( 54 ), ExtResource( 56 ), ExtResource( 55 ), ExtResource( 53 ), ExtResource( 52 ), ExtResource( 51 ), ExtResource( 49 ), ExtResource( 48 ), ExtResource( 46 ), ExtResource( 45 ), ExtResource( 44 ), ExtResource( 43 ), ExtResource( 42 ), ExtResource( 41 ), ExtResource( 40 ), ExtResource( 39 ), ExtResource( 38 ), ExtResource( 37 ), ExtResource( 35 ), ExtResource( 57 ), ExtResource( 62 ), ExtResource( 61 ), ExtResource( 60 ), ExtResource( 59 ), ExtResource( 58 ) ],
+"loop": true,
+"name": "jump",
+"speed": 20.0
+}, {
 "frames": [ ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 75 ), ExtResource( 76 ), ExtResource( 77 ), ExtResource( 78 ), ExtResource( 79 ), ExtResource( 80 ), ExtResource( 81 ), ExtResource( 82 ), ExtResource( 83 ), ExtResource( 84 ), ExtResource( 85 ), ExtResource( 86 ), ExtResource( 87 ), ExtResource( 88 ) ],
 "loop": true,
 "name": "run",
@@ -179,11 +186,6 @@ animations = [ {
 "frames": [ ExtResource( 8 ), ExtResource( 7 ), ExtResource( 6 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 1 ), ExtResource( 34 ), ExtResource( 33 ), ExtResource( 32 ), ExtResource( 30 ), ExtResource( 29 ), ExtResource( 28 ), ExtResource( 27 ), ExtResource( 25 ), ExtResource( 24 ), ExtResource( 23 ), ExtResource( 22 ), ExtResource( 20 ), ExtResource( 19 ), ExtResource( 67 ) ],
 "loop": true,
 "name": "walk",
-"speed": 20.0
-}, {
-"frames": [ ExtResource( 89 ), ExtResource( 90 ), ExtResource( 47 ), ExtResource( 36 ), ExtResource( 50 ), ExtResource( 54 ), ExtResource( 56 ), ExtResource( 55 ), ExtResource( 53 ), ExtResource( 52 ), ExtResource( 51 ), ExtResource( 49 ), ExtResource( 48 ), ExtResource( 46 ), ExtResource( 45 ), ExtResource( 44 ), ExtResource( 43 ), ExtResource( 42 ), ExtResource( 41 ), ExtResource( 40 ), ExtResource( 39 ), ExtResource( 38 ), ExtResource( 37 ), ExtResource( 35 ), ExtResource( 57 ), ExtResource( 62 ), ExtResource( 61 ), ExtResource( 60 ), ExtResource( 59 ), ExtResource( 58 ) ],
-"loop": true,
-"name": "jump",
 "speed": 20.0
 } ]
 
@@ -312,5 +314,11 @@ visible = false
 position = Vector2( 44.2215, 18.1989 )
 scale = Vector2( 0.271169, 0.271169 )
 frames = SubResource( 22 )
+
+[node name="FireworksCracking" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 93 )
+
+[node name="FireworksDouble" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 92 )
 
 [connection signal="animation_finished" from="quickstepexit" to="." method="_on_quickstepexit_animation_finished"]
