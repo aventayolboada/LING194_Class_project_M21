@@ -286,6 +286,7 @@ __meta__ = {
 }
 
 [node name="Collected" type="Panel" parent="GridContainer/table"]
+visible = false
 margin_right = 17.0
 margin_bottom = 17.0
 custom_styles/panel = SubResource( 3 )
@@ -336,6 +337,7 @@ __meta__ = {
 }
 
 [node name="Collected" type="Panel" parent="GridContainer/door"]
+visible = false
 margin_left = 2.0
 margin_top = 1.0
 margin_right = 17.0
@@ -385,6 +387,7 @@ __meta__ = {
 }
 
 [node name="Collected" type="Panel" parent="GridContainer/tea"]
+visible = false
 margin_left = 2.0
 margin_top = 2.0
 margin_right = 17.0
@@ -437,6 +440,7 @@ __meta__ = {
 }
 
 [node name="Collected" type="Panel" parent="GridContainer/coffee"]
+visible = false
 margin_left = 1.0
 margin_top = -1.0
 margin_right = 17.0
@@ -489,6 +493,7 @@ __meta__ = {
 }
 
 [node name="Collected" type="Panel" parent="GridContainer/water"]
+visible = false
 margin_left = 2.20039
 margin_top = 0.900299
 margin_right = 16.2004
@@ -540,6 +545,7 @@ __meta__ = {
 }
 
 [node name="Collected" type="Panel" parent="GridContainer/cup"]
+visible = false
 margin_top = 0.333336
 margin_right = 17.0
 margin_bottom = 18.3333
@@ -592,6 +598,7 @@ __meta__ = {
 }
 
 [node name="Collected" type="Panel" parent="GridContainer/plate"]
+visible = false
 margin_left = 2.0
 margin_top = 2.0
 margin_right = 16.0
@@ -644,6 +651,7 @@ __meta__ = {
 }
 
 [node name="Collected" type="Panel" parent="GridContainer/spoon"]
+visible = false
 margin_left = 1.0
 margin_right = 17.0
 margin_bottom = 18.0
@@ -695,6 +703,7 @@ __meta__ = {
 }
 
 [node name="Collected" type="Panel" parent="GridContainer/fork"]
+visible = false
 margin_left = 1.0
 margin_right = 17.0
 margin_bottom = 18.0
@@ -746,6 +755,7 @@ __meta__ = {
 }
 
 [node name="Collected" type="Panel" parent="GridContainer/knife"]
+visible = false
 margin_left = 1.0
 margin_right = 17.0
 margin_bottom = 18.0
@@ -796,6 +806,7 @@ __meta__ = {
 }
 
 [node name="Collected" type="Panel" parent="GridContainer/glass"]
+visible = false
 margin_left = 1.0
 margin_right = 17.0
 margin_bottom = 18.0
@@ -847,6 +858,7 @@ __meta__ = {
 }
 
 [node name="Collected" type="Panel" parent="GridContainer/chocolate"]
+visible = false
 margin_top = -1.0
 margin_right = 18.0
 margin_bottom = 19.0
@@ -898,6 +910,7 @@ __meta__ = {
 }
 
 [node name="Collected" type="Panel" parent="GridContainer/apple"]
+visible = false
 margin_top = 0.333336
 margin_right = 18.0
 margin_bottom = 18.3333
@@ -949,6 +962,7 @@ __meta__ = {
 }
 
 [node name="Collected" type="Panel" parent="GridContainer/pitaya"]
+visible = false
 margin_left = 1.0
 margin_right = 17.0
 margin_bottom = 18.0
@@ -1000,6 +1014,7 @@ __meta__ = {
 }
 
 [node name="Collected" type="Panel" parent="GridContainer/pineapple"]
+visible = false
 margin_left = 1.0
 margin_right = 17.0
 margin_bottom = 18.0
@@ -1051,6 +1066,7 @@ __meta__ = {
 }
 
 [node name="Collected" type="Panel" parent="GridContainer/TV"]
+visible = false
 margin_left = -1.0
 margin_top = -1.0
 margin_right = 18.0
@@ -1104,6 +1120,7 @@ __meta__ = {
 }
 
 [node name="Collected" type="Panel" parent="GridContainer/sofa"]
+visible = false
 margin_left = -0.333344
 margin_top = -1.0
 margin_right = 18.6667
@@ -1155,6 +1172,7 @@ __meta__ = {
 }
 
 [node name="Collected" type="Panel" parent="GridContainer/rose"]
+visible = false
 margin_top = 0.249756
 margin_right = 18.0
 margin_bottom = 18.2498
@@ -1207,6 +1225,7 @@ __meta__ = {
 }
 
 [node name="Collected" type="Panel" parent="GridContainer/lily"]
+visible = false
 margin_left = -1.0
 margin_top = -1.0
 margin_right = 18.0
@@ -1258,6 +1277,7 @@ __meta__ = {
 }
 
 [node name="Collected" type="Panel" parent="GridContainer/orchid"]
+visible = false
 margin_right = 17.0
 margin_bottom = 16.0
 custom_styles/panel = SubResource( 43 )

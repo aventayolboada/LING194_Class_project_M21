@@ -1,23 +1,4 @@
-[gd_scene load_steps=19 format=2]
-
-[ext_resource path="res://Dinning Table_Mixtec.gd" type="Script" id=1]
-[ext_resource path="res://Mixtec/Mesa (table).png" type="Texture" id=2]
-[ext_resource path="res://Images/Dinning Table.png" type="Texture" id=3]
-[ext_resource path="res://Images/Fork.gd" type="Script" id=4]
-[ext_resource path="res://Mixtec/Fork (Trinchi).png" type="Texture" id=5]
-[ext_resource path="res://Images/Fork.png" type="Texture" id=6]
-[ext_resource path="res://Images/Glass.png" type="Texture" id=7]
-[ext_resource path="res://Images/Glass_Mixtec.gd" type="Script" id=8]
-[ext_resource path="res://Mixtec/Vaso (glass).png" type="Texture" id=9]
-[ext_resource path="res://Mixtec/Koo (Plate).png" type="Texture" id=10]
-[ext_resource path="res://Images/Plate_Mixtec.gd" type="Script" id=11]
-[ext_resource path="res://Images/Plate.png" type="Texture" id=12]
-[ext_resource path="res://Images/Knife_Mixtec.gd" type="Script" id=13]
-[ext_resource path="res://Images/Knife.png" type="Texture" id=14]
-[ext_resource path="res://Mixtec/Yuchi (knife).png" type="Texture" id=15]
-[ext_resource path="res://Images/Spoon.png" type="Texture" id=16]
-[ext_resource path="res://Images/Spoon_Mixtex.gd" type="Script" id=17]
-[ext_resource path="res://Mixtec/Kuchara (spoon).png" type="Texture" id=18]
+[gd_scene format=2]
 
 [node name="Control" type="Control"]
 __meta__ = {
@@ -28,7 +9,6 @@ __meta__ = {
 visible = true
 margin_right = 40.0
 margin_bottom = 40.0
-script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -36,7 +16,6 @@ __meta__ = {
 [node name="Mesa_Table" type="Sprite" parent="Dinning Table_Mixtec"]
 position = Vector2( 147.953, 471.38 )
 scale = Vector2( 0.0770767, 0.0574556 )
-texture = ExtResource( 2 )
 
 [node name="Dining Table_Img" type="ToolButton" parent="."]
 margin_left = 140.0
@@ -51,13 +30,11 @@ __meta__ = {
 [node name="DT" type="Sprite" parent="Dining Table_Img"]
 position = Vector2( 385.647, 46.5204 )
 scale = Vector2( 0.913177, 0.959239 )
-texture = ExtResource( 3 )
 
 [node name="Fork_Mixtec" type="Popup" parent="."]
 visible = true
 margin_right = 40.0
 margin_bottom = 40.0
-script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -65,7 +42,6 @@ __meta__ = {
 [node name="Trinchi_Fork" type="Sprite" parent="Fork_Mixtec"]
 position = Vector2( 136.877, 231.066 )
 scale = Vector2( 0.0642306, 0.0623246 )
-texture = ExtResource( 5 )
 
 [node name="Fork_Img" type="ToolButton" parent="."]
 margin_left = 256.731
@@ -80,18 +56,15 @@ __meta__ = {
 [node name="Fork" type="Sprite" parent="Fork_Img"]
 position = Vector2( 64.1677, 48.1501 )
 scale = Vector2( 0.159374, 0.141873 )
-texture = ExtResource( 6 )
 
 [node name="Glass_Mixtec" type="Popup" parent="."]
 visible = true
 margin_right = 40.0
 margin_bottom = 40.0
-script = ExtResource( 8 )
 
 [node name="Vaso_Glass" type="Sprite" parent="Glass_Mixtec"]
 position = Vector2( 142.262, 137.643 )
 scale = Vector2( 0.0660075, 0.0539291 )
-texture = ExtResource( 9 )
 
 [node name="Glass_Img" type="ToolButton" parent="."]
 margin_left = 396.751
@@ -106,13 +79,11 @@ __meta__ = {
 [node name="Glass" type="Sprite" parent="Glass_Img"]
 position = Vector2( 69.0865, 57.4547 )
 scale = Vector2( 0.294983, 0.265782 )
-texture = ExtResource( 7 )
 
 [node name="Plate_Mixtec" type="Popup" parent="."]
 visible = true
 margin_right = 40.0
 margin_bottom = 40.0
-script = ExtResource( 11 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -120,7 +91,6 @@ __meta__ = {
 [node name="Plate_Koo" type="Sprite" parent="Plate_Mixtec"]
 position = Vector2( 134.811, 344.841 )
 scale = Vector2( 0.0497242, 0.0383229 )
-texture = ExtResource( 10 )
 
 [node name="Plate_Image" type="ToolButton" parent="."]
 margin_left = 527.0
@@ -135,18 +105,15 @@ __meta__ = {
 [node name="Plate" type="Sprite" parent="Plate_Image"]
 position = Vector2( 90.7632, 10.7914 )
 scale = Vector2( 0.228014, 0.226284 )
-texture = ExtResource( 12 )
 
 [node name="Knife_Mixtec" type="Popup" parent="."]
 visible = true
 margin_right = 40.0
 margin_bottom = 40.0
-script = ExtResource( 13 )
 
 [node name="Knife_Yuchi" type="Sprite" parent="Knife_Mixtec"]
 position = Vector2( 896.787, 111.758 )
 scale = Vector2( 0.0606367, 0.0512715 )
-texture = ExtResource( 15 )
 
 [node name="Knife_Img" type="ToolButton" parent="."]
 margin_left = 334.008
@@ -161,18 +128,15 @@ __meta__ = {
 [node name="Knife" type="Sprite" parent="Knife_Img"]
 position = Vector2( 69.5308, 26.9675 )
 scale = Vector2( 0.182328, 0.207501 )
-texture = ExtResource( 14 )
 
 [node name="Spoon_Mixtex" type="Popup" parent="."]
 visible = true
 margin_right = 40.0
 margin_bottom = 40.0
-script = ExtResource( 17 )
 
 [node name="Spoon_Kuchara" type="Sprite" parent="Spoon_Mixtex"]
 position = Vector2( 910.878, 183.054 )
 scale = Vector2( 0.0584993, 0.0476668 )
-texture = ExtResource( 18 )
 
 [node name="Spoon_Img" type="ToolButton" parent="."]
 margin_left = 583.0
@@ -187,7 +151,6 @@ __meta__ = {
 [node name="Spoon" type="Sprite" parent="Spoon_Img"]
 position = Vector2( 42.6382, 46.3519 )
 scale = Vector2( 0.113124, 0.106502 )
-texture = ExtResource( 16 )
 
 [connection signal="pressed" from="Dining Table_Img" to="Dinning Table_Mixtec" method="_on_Dining_Table_Img_pressed"]
 [connection signal="pressed" from="Fork_Img" to="Fork_Mixtec" method="_on_Fork_Img_pressed"]
