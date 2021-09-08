@@ -17,7 +17,6 @@ margin_bottom = 265.753
 text = "RUG"
 align = 1
 valign = 1
-percent_visible = 1.5
 max_lines_visible = 5
 __meta__ = {
 "_edit_use_anchors_": false
