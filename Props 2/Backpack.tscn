@@ -46,11 +46,11 @@ bg_color = Color( 0.576471, 0.054902, 0.054902, 1 )
 [sub_resource type="StyleBoxFlat" id=5]
 bg_color = Color( 0.956863, 0.752941, 0.752941, 1 )
 
-[sub_resource type="StyleBoxTexture" id=14]
+[sub_resource type="StyleBoxTexture" id=6]
 texture = ExtResource( 12 )
 region_rect = Rect2( 0, 0, 500, 500 )
 
-[sub_resource type="StyleBoxTexture" id=15]
+[sub_resource type="StyleBoxTexture" id=7]
 texture = ExtResource( 12 )
 region_rect = Rect2( 0, 0, 500, 500 )
 
@@ -62,119 +62,119 @@ region_rect = Rect2( 0, 0, 500, 500 )
 texture = ExtResource( 8 )
 region_rect = Rect2( 0, 0, 500, 500 )
 
-[sub_resource type="StyleBoxTexture" id=12]
+[sub_resource type="StyleBoxTexture" id=10]
 texture = ExtResource( 14 )
 region_rect = Rect2( 0, 0, 500, 500 )
+
+[sub_resource type="StyleBoxTexture" id=11]
+texture = ExtResource( 14 )
+region_rect = Rect2( 0, 0, 500, 500 )
+
+[sub_resource type="StyleBoxTexture" id=12]
+texture = ExtResource( 10 )
+region_rect = Rect2( 0, 0, 210, 210 )
 
 [sub_resource type="StyleBoxTexture" id=13]
-texture = ExtResource( 14 )
+texture = ExtResource( 10 )
+region_rect = Rect2( 0, 0, 210, 210 )
+
+[sub_resource type="StyleBoxTexture" id=14]
+texture = ExtResource( 11 )
 region_rect = Rect2( 0, 0, 500, 500 )
 
-[sub_resource type="StyleBoxTexture" id=18]
-texture = ExtResource( 10 )
-region_rect = Rect2( 0, 0, 210, 210 )
-
-[sub_resource type="StyleBoxTexture" id=19]
-texture = ExtResource( 10 )
-region_rect = Rect2( 0, 0, 210, 210 )
+[sub_resource type="StyleBoxTexture" id=15]
+texture = ExtResource( 11 )
+region_rect = Rect2( 0, 0, 500, 500 )
 
 [sub_resource type="StyleBoxTexture" id=16]
-texture = ExtResource( 11 )
-region_rect = Rect2( 0, 0, 500, 500 )
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 367, 367 )
 
 [sub_resource type="StyleBoxTexture" id=17]
-texture = ExtResource( 11 )
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 367, 367 )
+
+[sub_resource type="StyleBoxTexture" id=18]
+texture = ExtResource( 17 )
 region_rect = Rect2( 0, 0, 500, 500 )
 
-[sub_resource type="StyleBoxTexture" id=6]
-texture = ExtResource( 9 )
-region_rect = Rect2( 0, 0, 367, 367 )
-
-[sub_resource type="StyleBoxTexture" id=7]
-texture = ExtResource( 9 )
-region_rect = Rect2( 0, 0, 367, 367 )
+[sub_resource type="StyleBoxTexture" id=19]
+texture = ExtResource( 17 )
+region_rect = Rect2( 0, 0, 500, 500 )
 
 [sub_resource type="StyleBoxTexture" id=20]
-texture = ExtResource( 17 )
+texture = ExtResource( 19 )
 region_rect = Rect2( 0, 0, 500, 500 )
 
 [sub_resource type="StyleBoxTexture" id=21]
-texture = ExtResource( 17 )
+texture = ExtResource( 19 )
 region_rect = Rect2( 0, 0, 500, 500 )
 
 [sub_resource type="StyleBoxTexture" id=22]
-texture = ExtResource( 19 )
+texture = ExtResource( 18 )
 region_rect = Rect2( 0, 0, 500, 500 )
 
 [sub_resource type="StyleBoxTexture" id=23]
-texture = ExtResource( 19 )
+texture = ExtResource( 18 )
 region_rect = Rect2( 0, 0, 500, 500 )
 
 [sub_resource type="StyleBoxTexture" id=24]
-texture = ExtResource( 18 )
+texture = ExtResource( 21 )
 region_rect = Rect2( 0, 0, 500, 500 )
 
 [sub_resource type="StyleBoxTexture" id=25]
-texture = ExtResource( 18 )
+texture = ExtResource( 21 )
 region_rect = Rect2( 0, 0, 500, 500 )
 
 [sub_resource type="StyleBoxTexture" id=26]
-texture = ExtResource( 21 )
+texture = ExtResource( 27 )
 region_rect = Rect2( 0, 0, 500, 500 )
 
 [sub_resource type="StyleBoxTexture" id=27]
-texture = ExtResource( 21 )
-region_rect = Rect2( 0, 0, 500, 500 )
-
-[sub_resource type="StyleBoxTexture" id=42]
 texture = ExtResource( 27 )
-region_rect = Rect2( 0, 0, 500, 500 )
-
-[sub_resource type="StyleBoxTexture" id=43]
-texture = ExtResource( 27 )
-region_rect = Rect2( 0, 0, 500, 500 )
-
-[sub_resource type="StyleBoxTexture" id=32]
-texture = ExtResource( 6 )
-region_rect = Rect2( 0, 0, 500, 500 )
-
-[sub_resource type="StyleBoxTexture" id=33]
-texture = ExtResource( 6 )
-region_rect = Rect2( 0, 0, 500, 500 )
-
-[sub_resource type="StyleBoxTexture" id=34]
-texture = ExtResource( 23 )
-region_rect = Rect2( 0, 0, 500, 500 )
-
-[sub_resource type="StyleBoxTexture" id=35]
-texture = ExtResource( 23 )
-region_rect = Rect2( 0, 0, 500, 500 )
-
-[sub_resource type="StyleBoxTexture" id=36]
-texture = ExtResource( 24 )
-region_rect = Rect2( 0, 0, 500, 500 )
-
-[sub_resource type="StyleBoxTexture" id=37]
-texture = ExtResource( 24 )
 region_rect = Rect2( 0, 0, 500, 500 )
 
 [sub_resource type="StyleBoxTexture" id=28]
-texture = ExtResource( 20 )
+texture = ExtResource( 6 )
 region_rect = Rect2( 0, 0, 500, 500 )
 
 [sub_resource type="StyleBoxTexture" id=29]
-texture = ExtResource( 20 )
+texture = ExtResource( 6 )
 region_rect = Rect2( 0, 0, 500, 500 )
 
 [sub_resource type="StyleBoxTexture" id=30]
-texture = ExtResource( 22 )
+texture = ExtResource( 23 )
 region_rect = Rect2( 0, 0, 500, 500 )
 
 [sub_resource type="StyleBoxTexture" id=31]
+texture = ExtResource( 23 )
+region_rect = Rect2( 0, 0, 500, 500 )
+
+[sub_resource type="StyleBoxTexture" id=32]
+texture = ExtResource( 24 )
+region_rect = Rect2( 0, 0, 500, 500 )
+
+[sub_resource type="StyleBoxTexture" id=33]
+texture = ExtResource( 24 )
+region_rect = Rect2( 0, 0, 500, 500 )
+
+[sub_resource type="StyleBoxTexture" id=34]
+texture = ExtResource( 20 )
+region_rect = Rect2( 0, 0, 500, 500 )
+
+[sub_resource type="StyleBoxTexture" id=35]
+texture = ExtResource( 20 )
+region_rect = Rect2( 0, 0, 500, 500 )
+
+[sub_resource type="StyleBoxTexture" id=36]
 texture = ExtResource( 22 )
 region_rect = Rect2( 0, 0, 500, 500 )
 
-[sub_resource type="StyleBoxTexture" id=44]
+[sub_resource type="StyleBoxTexture" id=37]
+texture = ExtResource( 22 )
+region_rect = Rect2( 0, 0, 500, 500 )
+
+[sub_resource type="StyleBoxTexture" id=38]
 texture = ExtResource( 25 )
 region_rect = Rect2( 0, 0, 500, 500 )
 
@@ -190,11 +190,11 @@ region_rect = Rect2( 0, 0, 500, 500 )
 texture = ExtResource( 26 )
 region_rect = Rect2( 0, 0, 500, 500 )
 
-[sub_resource type="StyleBoxTexture" id=10]
+[sub_resource type="StyleBoxTexture" id=42]
 texture = ExtResource( 7 )
 region_rect = Rect2( 0, 0, 500, 500 )
 
-[sub_resource type="StyleBoxTexture" id=11]
+[sub_resource type="StyleBoxTexture" id=43]
 texture = ExtResource( 7 )
 region_rect = Rect2( 0, 0, 500, 500 )
 
@@ -349,7 +349,7 @@ margin_top = 1.34329
 margin_right = 15.6468
 margin_bottom = 17.3433
 rect_pivot_offset = Vector2( -108.441, 13.8935 )
-custom_styles/panel = SubResource( 14 )
+custom_styles/panel = SubResource( 6 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -359,7 +359,7 @@ margin_left = 2.0
 margin_top = 1.0
 margin_right = 17.0
 margin_bottom = 17.0
-custom_styles/panel = SubResource( 15 )
+custom_styles/panel = SubResource( 7 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -450,7 +450,7 @@ margin_top = -1.0
 margin_right = 17.0
 margin_bottom = 17.0
 rect_pivot_offset = Vector2( -108.441, 13.8935 )
-custom_styles/panel = SubResource( 12 )
+custom_styles/panel = SubResource( 10 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -460,7 +460,7 @@ margin_left = 1.0
 margin_top = -1.0
 margin_right = 17.0
 margin_bottom = 17.0
-custom_styles/panel = SubResource( 13 )
+custom_styles/panel = SubResource( 11 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -502,7 +502,7 @@ margin_top = 1.15005
 margin_right = 16.2497
 margin_bottom = 16.15
 rect_pivot_offset = Vector2( -108.441, 13.8935 )
-custom_styles/panel = SubResource( 18 )
+custom_styles/panel = SubResource( 12 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -512,7 +512,7 @@ margin_left = 2.20039
 margin_top = 0.900299
 margin_right = 16.2004
 margin_bottom = 15.9003
-custom_styles/panel = SubResource( 19 )
+custom_styles/panel = SubResource( 13 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -553,7 +553,7 @@ margin_top = 0.333336
 margin_right = 17.0
 margin_bottom = 18.3333
 rect_pivot_offset = Vector2( -108.441, 13.8935 )
-custom_styles/panel = SubResource( 16 )
+custom_styles/panel = SubResource( 14 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -562,7 +562,7 @@ __meta__ = {
 margin_top = 0.333336
 margin_right = 17.0
 margin_bottom = 18.3333
-custom_styles/panel = SubResource( 17 )
+custom_styles/panel = SubResource( 15 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -605,7 +605,7 @@ margin_top = 2.0
 margin_right = 16.0
 margin_bottom = 16.0
 rect_pivot_offset = Vector2( -108.441, 13.8935 )
-custom_styles/panel = SubResource( 6 )
+custom_styles/panel = SubResource( 16 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -615,7 +615,7 @@ margin_left = 2.0
 margin_top = 2.0
 margin_right = 16.0
 margin_bottom = 16.0
-custom_styles/panel = SubResource( 7 )
+custom_styles/panel = SubResource( 17 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -657,7 +657,7 @@ margin_left = 1.0
 margin_right = 17.0
 margin_bottom = 18.0
 rect_pivot_offset = Vector2( -108.441, 13.8935 )
-custom_styles/panel = SubResource( 20 )
+custom_styles/panel = SubResource( 18 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -666,7 +666,7 @@ __meta__ = {
 margin_left = 1.0
 margin_right = 17.0
 margin_bottom = 18.0
-custom_styles/panel = SubResource( 21 )
+custom_styles/panel = SubResource( 19 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -708,7 +708,7 @@ margin_left = 1.0
 margin_right = 17.0
 margin_bottom = 18.0
 rect_pivot_offset = Vector2( -108.441, 13.8935 )
-custom_styles/panel = SubResource( 22 )
+custom_styles/panel = SubResource( 20 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -717,7 +717,7 @@ __meta__ = {
 margin_left = 1.0
 margin_right = 17.0
 margin_bottom = 18.0
-custom_styles/panel = SubResource( 23 )
+custom_styles/panel = SubResource( 21 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -759,7 +759,7 @@ margin_left = 1.0
 margin_right = 17.0
 margin_bottom = 18.0
 rect_pivot_offset = Vector2( -108.441, 13.8935 )
-custom_styles/panel = SubResource( 24 )
+custom_styles/panel = SubResource( 22 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -768,7 +768,7 @@ __meta__ = {
 margin_left = 1.0
 margin_right = 17.0
 margin_bottom = 18.0
-custom_styles/panel = SubResource( 25 )
+custom_styles/panel = SubResource( 23 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -809,7 +809,7 @@ margin_left = 1.0
 margin_right = 17.0
 margin_bottom = 18.0
 rect_pivot_offset = Vector2( -108.441, 13.8935 )
-custom_styles/panel = SubResource( 26 )
+custom_styles/panel = SubResource( 24 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -818,7 +818,7 @@ __meta__ = {
 margin_left = 1.0
 margin_right = 17.0
 margin_bottom = 18.0
-custom_styles/panel = SubResource( 27 )
+custom_styles/panel = SubResource( 25 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -860,7 +860,7 @@ margin_top = -1.0
 margin_right = 18.0
 margin_bottom = 19.0
 rect_pivot_offset = Vector2( -108.441, 13.8935 )
-custom_styles/panel = SubResource( 42 )
+custom_styles/panel = SubResource( 26 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -869,7 +869,7 @@ __meta__ = {
 margin_top = -1.0
 margin_right = 18.0
 margin_bottom = 19.0
-custom_styles/panel = SubResource( 43 )
+custom_styles/panel = SubResource( 27 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -911,7 +911,7 @@ margin_left = -1.52588e-05
 margin_right = 18.0
 margin_bottom = 18.0
 rect_pivot_offset = Vector2( -108.441, 13.8935 )
-custom_styles/panel = SubResource( 32 )
+custom_styles/panel = SubResource( 28 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -920,7 +920,7 @@ __meta__ = {
 margin_top = 0.333336
 margin_right = 18.0
 margin_bottom = 18.3333
-custom_styles/panel = SubResource( 33 )
+custom_styles/panel = SubResource( 29 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -962,7 +962,7 @@ margin_left = 1.0
 margin_right = 17.0
 margin_bottom = 18.0
 rect_pivot_offset = Vector2( -108.441, 13.8935 )
-custom_styles/panel = SubResource( 34 )
+custom_styles/panel = SubResource( 30 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -971,7 +971,7 @@ __meta__ = {
 margin_left = 1.0
 margin_right = 17.0
 margin_bottom = 18.0
-custom_styles/panel = SubResource( 35 )
+custom_styles/panel = SubResource( 31 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -1013,7 +1013,7 @@ margin_left = 1.0
 margin_right = 17.0
 margin_bottom = 18.0
 rect_pivot_offset = Vector2( -108.441, 13.8935 )
-custom_styles/panel = SubResource( 36 )
+custom_styles/panel = SubResource( 32 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -1022,7 +1022,7 @@ __meta__ = {
 margin_left = 1.0
 margin_right = 17.0
 margin_bottom = 18.0
-custom_styles/panel = SubResource( 37 )
+custom_styles/panel = SubResource( 33 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -1064,7 +1064,7 @@ margin_top = -1.33334
 margin_right = 18.3333
 margin_bottom = 18.6667
 rect_pivot_offset = Vector2( -108.441, 13.8935 )
-custom_styles/panel = SubResource( 28 )
+custom_styles/panel = SubResource( 34 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -1074,7 +1074,7 @@ margin_left = -1.0
 margin_top = -1.0
 margin_right = 18.0
 margin_bottom = 19.0
-custom_styles/panel = SubResource( 29 )
+custom_styles/panel = SubResource( 35 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -1117,7 +1117,7 @@ margin_top = -1.33334
 margin_right = 18.6667
 margin_bottom = 18.6667
 rect_pivot_offset = Vector2( -108.441, 13.8935 )
-custom_styles/panel = SubResource( 30 )
+custom_styles/panel = SubResource( 36 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -1127,7 +1127,7 @@ margin_left = -0.333344
 margin_top = -1.0
 margin_right = 18.6667
 margin_bottom = 19.0
-custom_styles/panel = SubResource( 31 )
+custom_styles/panel = SubResource( 37 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -1168,7 +1168,7 @@ modulate = Color( 0, 0, 0, 1 )
 margin_right = 18.0
 margin_bottom = 18.0
 rect_pivot_offset = Vector2( -108.441, 13.8935 )
-custom_styles/panel = SubResource( 44 )
+custom_styles/panel = SubResource( 38 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -1271,7 +1271,7 @@ modulate = Color( 0, 0, 0, 1 )
 margin_right = 17.0
 margin_bottom = 16.0
 rect_pivot_offset = Vector2( -108.441, 13.8935 )
-custom_styles/panel = SubResource( 10 )
+custom_styles/panel = SubResource( 42 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -1279,7 +1279,7 @@ __meta__ = {
 [node name="Collected" type="Panel" parent="GridContainer/orchid"]
 margin_right = 17.0
 margin_bottom = 16.0
-custom_styles/panel = SubResource( 11 )
+custom_styles/panel = SubResource( 43 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
