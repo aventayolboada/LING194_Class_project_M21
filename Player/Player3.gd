@@ -71,18 +71,19 @@ func _process(delta):
 func idle():
 	$AnimatedSprite.animation = "idle"
 	get_tree().set_group("CelebrateFireworksParticles", "emitting", false)
-	$FireworkSounds.stop()
+	$FireworksCracking.stop()
+	$FireworksDouble.stop()
 	$Fanfare.playing = false
 	fanfarehasplayed = false
 
 func celebrate():
 	$AnimatedSprite.animation = "jump"
 	get_tree().set_group("CelebrateFireworksParticles", "emitting", true)
-	if $FireworkSounds.playing == false:
-		$FireworkSounds.playing = true
 	if fanfarehasplayed == false:
 		$Fanfare.playing = true
 		fanfarehasplayed = true
+		$FireworksCracking.play()
+		$FireworksDouble.play()
 	
 func quickstep():
 	qstarget = get_global_mouse_position()
