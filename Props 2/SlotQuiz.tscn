@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Props 2/SlotQuiz.gd" type="Script" id=1]
-[ext_resource path="res://Props 2/images/Zoom.jpg" type="Texture" id=2]
+[ext_resource path="res://Props 2/images/zoom.png" type="Texture" id=2]
 
 [node name="SlotQuiz" type="Control"]
 margin_left = 0.739013
@@ -71,20 +71,21 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -290.5
-margin_top = -236.5
-margin_right = 290.5
-margin_bottom = 236.5
+margin_left = -296.982
+margin_top = -209.223
+margin_right = 284.018
+margin_bottom = 214.777
 window_title = "Congrats!"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="TextureRect" type="TextureRect" parent="Zoom_Screenshot"]
-margin_left = 7.92609
-margin_right = 520.926
-margin_bottom = 350.0
-rect_scale = Vector2( 1.1, 1.1 )
+margin_left = 8.0
+margin_top = 7.47256
+margin_right = 803.0
+margin_bottom = 470.473
+rect_scale = Vector2( 0.71, 0.711 )
 texture = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -94,10 +95,10 @@ __meta__ = {
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 9.0
-margin_top = -76.0
-margin_right = 9.0
-margin_bottom = -11.0
+margin_left = 19.077
+margin_top = -76.5602
+margin_right = -15.923
+margin_bottom = -11.5602
 text = "Contributors: Instructor -- Albert Ventayol-Boada (LING 194); Menu -- Ashley Yung, Christine Afework, Alex Wishowski; Player -- Mingnan Zhang, Karina Galaviz, Abby Welch; House -- Minyi Jiang, Yihan Li, Jalima Brooks; Learning -- Justin Liu, Yanru Liu; Backpack -- Liuhao Wu, Siyue Liu, Karina Rodriguez; Rug -- Kirra Sebastian, Bill Xin"
 autowrap = true
 __meta__ = {
