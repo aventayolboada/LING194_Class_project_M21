@@ -6,6 +6,7 @@ onready var panel = get_node("Panel")
 onready var backpack = get_node("Backpack")
 onready var table_collected = get_node("Backpack/GridContainer/table/Collected")
 onready var table_uncollected = get_node("Backpack/GridContainer/table/Uncollected")
+onready var player = get_node("Player")
 
 func _on_Button_button_up():
 	button.hide()
@@ -16,7 +17,6 @@ func _on_Button_button_up():
 
 func _on_Button_pressed():
 	backpack.visible = true
-
 
 func _on_Close_Icon_pressed():
 	backpack.visible = false

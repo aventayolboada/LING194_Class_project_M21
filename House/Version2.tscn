@@ -1,13 +1,14 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
-[ext_resource path="res://House/wall 2.png" type="Texture" id=1]
-[ext_resource path="res://House/ground.png" type="Texture" id=2]
+[ext_resource path="res://House/house_sprites/wall 2.png" type="Texture" id=1]
+[ext_resource path="res://House/house_sprites/ground.png" type="Texture" id=2]
 [ext_resource path="res://Main/BERNHC.TTF" type="DynamicFontData" id=3]
 [ext_resource path="res://House/Version2.gd" type="Script" id=4]
 [ext_resource path="res://Props 3/objects_house_0042_Layer-43.png" type="Texture" id=5]
 [ext_resource path="res://Props 2/Backpack.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Props 2/images/close_icon.png" type="Texture" id=7]
 [ext_resource path="res://Props 2/images/Items/table.png" type="Texture" id=8]
+[ext_resource path="res://Player/Player3.tscn" type="PackedScene" id=9]
 
 [sub_resource type="TileSet" id=1]
 0/name = "ground.png 0"
@@ -176,6 +177,9 @@ flat = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Player" parent="." instance=ExtResource( 9 )]
+position = Vector2( 508.185, 298.959 )
 
 [connection signal="button_up" from="Table" to="." method="_on_Table_button_up"]
 [connection signal="pressed" from="rug/Button" to="." method="_on_Button_pressed"]
