@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Apple.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Items/sofa.png" type="Texture" id=2]
+
+[node name="Sofa" instance=ExtResource( 1 )]
+texture_normal = ExtResource( 2 )
+
+[node name="Label" parent="WindowDialog" index="1"]
+text = "nuú koó
+(sofa)"
