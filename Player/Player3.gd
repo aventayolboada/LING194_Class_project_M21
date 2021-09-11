@@ -9,13 +9,16 @@ var velocity = Vector2()
 #var bpopen = false
 var qstarget = Vector2()
 var fanfarehasplayed = false
+var busy = false
+var triggeredcelebrate = false
+var unlocked = false
 
 func _ready():
 	screen_size = get_viewport_rect().size
 	$AnimatedSprite.play()
 	
 func _input(event):
-	if event.is_action_pressed("click"):
+	if event.is_action_pressed("click") and busy == false:
 		target = get_global_mouse_position()
 		clickmovemode = true
 		velocity = position.direction_to(target) * speed
@@ -25,7 +28,7 @@ func _input(event):
 			#bpopen = true
 		#else:
 			#bpopen = false
-	if event.is_action_pressed("t"):
+	if event.is_action_pressed("t") and unlocked == true:
 		quickstep()
 		
 func _process(delta):
@@ -57,7 +60,9 @@ func _process(delta):
 		if speed > 300:
 			$AnimatedSprite.animation = "run"
 	else:
-		if Input.is_action_pressed("c"):
+		if Input.is_action_pressed("c") and unlocked == true:
+			celebrate()
+		elif triggeredcelebrate == true:
 			celebrate()
 		else:
 			idle()
@@ -84,6 +89,13 @@ func celebrate():
 		fanfarehasplayed = true
 		$FireworksCracking.play()
 		$FireworksDouble.play()
+
+func celebrate_trigger():
+	$CelebrateTimer.start()
+	triggeredcelebrate = true
+	
+func _on_CelebrateTimer_timeout():
+	triggeredcelebrate = false
 	
 func quickstep():
 	qstarget = get_global_mouse_position()
@@ -103,3 +115,16 @@ func _on_quickstepexit_animation_finished():
 	$AnimatedSprite.visible = true
 	velocity.x = 0
 	velocity.y = 0
+
+func _on_Backpack_visibility_changed():
+	busy = busy == false
+	velocity.x = 0
+	velocity.y = 0
+
+func wonthegame():
+	unlocked = true
+
+
+
+
+	

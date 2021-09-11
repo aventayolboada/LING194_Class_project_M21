@@ -173,11 +173,6 @@ animations = [ {
 "name": "idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 89 ), ExtResource( 90 ), ExtResource( 47 ), ExtResource( 36 ), ExtResource( 50 ), ExtResource( 54 ), ExtResource( 56 ), ExtResource( 55 ), ExtResource( 53 ), ExtResource( 52 ), ExtResource( 51 ), ExtResource( 49 ), ExtResource( 48 ), ExtResource( 46 ), ExtResource( 45 ), ExtResource( 44 ), ExtResource( 43 ), ExtResource( 42 ), ExtResource( 41 ), ExtResource( 40 ), ExtResource( 39 ), ExtResource( 38 ), ExtResource( 37 ), ExtResource( 35 ), ExtResource( 57 ), ExtResource( 62 ), ExtResource( 61 ), ExtResource( 60 ), ExtResource( 59 ), ExtResource( 58 ) ],
-"loop": true,
-"name": "jump",
-"speed": 20.0
-}, {
 "frames": [ ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 75 ), ExtResource( 76 ), ExtResource( 77 ), ExtResource( 78 ), ExtResource( 79 ), ExtResource( 80 ), ExtResource( 81 ), ExtResource( 82 ), ExtResource( 83 ), ExtResource( 84 ), ExtResource( 85 ), ExtResource( 86 ), ExtResource( 87 ), ExtResource( 88 ) ],
 "loop": true,
 "name": "run",
@@ -187,67 +182,72 @@ animations = [ {
 "loop": true,
 "name": "walk",
 "speed": 20.0
+}, {
+"frames": [ ExtResource( 89 ), ExtResource( 90 ), ExtResource( 47 ), ExtResource( 36 ), ExtResource( 50 ), ExtResource( 54 ), ExtResource( 56 ), ExtResource( 55 ), ExtResource( 53 ), ExtResource( 52 ), ExtResource( 51 ), ExtResource( 49 ), ExtResource( 48 ), ExtResource( 46 ), ExtResource( 45 ), ExtResource( 44 ), ExtResource( 43 ), ExtResource( 42 ), ExtResource( 41 ), ExtResource( 40 ), ExtResource( 39 ), ExtResource( 38 ), ExtResource( 37 ), ExtResource( 35 ), ExtResource( 57 ), ExtResource( 62 ), ExtResource( 61 ), ExtResource( 60 ), ExtResource( 59 ), ExtResource( 58 ) ],
+"loop": true,
+"name": "jump",
+"speed": 20.0
 } ]
 
 [sub_resource type="AtlasTexture" id=10]
 flags = 4
 atlas = ExtResource( 63 )
-region = Rect2( 0, 0, 896, 753 )
+region = Rect2( 0, 0, 804, 636 )
 
 [sub_resource type="AtlasTexture" id=11]
 flags = 4
 atlas = ExtResource( 63 )
-region = Rect2( 896, 0, 896, 753 )
+region = Rect2( 804, 0, 804, 636 )
 
 [sub_resource type="AtlasTexture" id=12]
 flags = 4
 atlas = ExtResource( 63 )
-region = Rect2( 1792, 0, 896, 753 )
+region = Rect2( 1608, 0, 804, 636 )
 
 [sub_resource type="AtlasTexture" id=13]
 flags = 4
 atlas = ExtResource( 63 )
-region = Rect2( 2688, 0, 896, 753 )
+region = Rect2( 2412, 0, 804, 636 )
 
 [sub_resource type="AtlasTexture" id=14]
 flags = 4
 atlas = ExtResource( 63 )
-region = Rect2( 3584, 0, 896, 753 )
+region = Rect2( 3216, 0, 804, 636 )
 
 [sub_resource type="AtlasTexture" id=15]
 flags = 4
 atlas = ExtResource( 63 )
-region = Rect2( 4480, 0, 896, 753 )
+region = Rect2( 4020, 0, 804, 636 )
 
 [sub_resource type="AtlasTexture" id=16]
 flags = 4
 atlas = ExtResource( 63 )
-region = Rect2( 0, 753, 896, 753 )
+region = Rect2( 0, 636, 804, 636 )
 
 [sub_resource type="AtlasTexture" id=17]
 flags = 4
 atlas = ExtResource( 63 )
-region = Rect2( 896, 753, 896, 753 )
+region = Rect2( 804, 636, 804, 636 )
 
 [sub_resource type="AtlasTexture" id=18]
 flags = 4
 atlas = ExtResource( 63 )
-region = Rect2( 1792, 753, 896, 753 )
+region = Rect2( 1608, 636, 804, 636 )
 
 [sub_resource type="AtlasTexture" id=19]
 flags = 4
 atlas = ExtResource( 63 )
-region = Rect2( 2688, 753, 896, 753 )
+region = Rect2( 2412, 636, 804, 636 )
 
 [sub_resource type="AtlasTexture" id=20]
 flags = 4
 atlas = ExtResource( 63 )
-region = Rect2( 3584, 753, 896, 753 )
+region = Rect2( 3216, 636, 804, 636 )
 
 [sub_resource type="AtlasTexture" id=21]
 flags = 4
 atlas = ExtResource( 63 )
-region = Rect2( 4480, 753, 896, 753 )
+region = Rect2( 4020, 636, 804, 636 )
 
 [sub_resource type="SpriteFrames" id=22]
 animations = [ {
@@ -321,4 +321,9 @@ stream = ExtResource( 93 )
 [node name="FireworksDouble" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 92 )
 
+[node name="CelebrateTimer" type="Timer" parent="."]
+wait_time = 4.5
+one_shot = true
+
 [connection signal="animation_finished" from="quickstepexit" to="." method="_on_quickstepexit_animation_finished"]
+[connection signal="timeout" from="CelebrateTimer" to="." method="_on_CelebrateTimer_timeout"]
