@@ -1,0 +1,191 @@
+[gd_scene load_steps=23 format=2]
+
+[ext_resource path="res://Props with Translations!/Fork.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Props with Translations!/Chocolate.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Props with Translations!/Coffee.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Props with Translations!/Apple.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Props with Translations!/Cup.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Props with Translations!/Orchid.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Props with Translations!/Table.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Props with Translations!/Knife.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Props with Translations!/Plate.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Props with Translations!/Glass.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Props with Translations!/TV.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Props with Translations!/Pineapple.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Props with Translations!/Sofa.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Props with Translations!/Rose.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Props with Translations!/Spoon.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Props with Translations!/Tea.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Props with Translations!/Door.tscn" type="PackedScene" id=17]
+[ext_resource path="res://Props with Translations!/Pitaya.tscn" type="PackedScene" id=18]
+[ext_resource path="res://Props with Translations!/Lily.tscn" type="PackedScene" id=19]
+[ext_resource path="res://Props with Translations!/Water.tscn" type="PackedScene" id=20]
+[ext_resource path="res://Props with Translations!/Main.gd" type="Script" id=21]
+[ext_resource path="res://Props with Translations!/Translation.tscn" type="PackedScene" id=22]
+
+[node name="Main" type="Node"]
+script = ExtResource( 21 )
+
+[node name="table" parent="." instance=ExtResource( 7 )]
+margin_left = 333.319
+margin_top = 158.867
+margin_right = 833.32
+margin_bottom = 658.867
+rect_scale = Vector2( 0.25, 0.25 )
+
+[node name="plate" parent="." instance=ExtResource( 9 )]
+margin_left = 385.523
+margin_top = -89.6826
+margin_right = 885.525
+margin_bottom = 410.317
+rect_scale = Vector2( 0.25, 0.25 )
+
+[node name="fork" parent="." instance=ExtResource( 1 )]
+margin_left = 318.817
+margin_top = -251.251
+margin_right = 818.817
+margin_bottom = 248.749
+rect_scale = Vector2( 0.25, 0.25 )
+
+[node name="spoon" parent="." instance=ExtResource( 15 )]
+margin_left = 29.1667
+margin_top = -306.356
+margin_right = 529.167
+margin_bottom = 193.645
+rect_scale = Vector2( 0.25, 0.25 )
+
+[node name="glass" parent="." instance=ExtResource( 10 )]
+margin_left = 180.269
+margin_top = 58.5192
+margin_right = 680.269
+margin_bottom = 558.52
+rect_scale = Vector2( 0.25, 0.25 )
+
+[node name="knife" parent="." instance=ExtResource( 8 )]
+margin_left = -321.331
+margin_top = -324.088
+margin_right = 178.669
+margin_bottom = 175.912
+rect_scale = Vector2( 0.25, 0.25 )
+
+[node name="TV" parent="." instance=ExtResource( 11 )]
+margin_left = 81.6599
+margin_top = 179.169
+margin_right = 581.66
+margin_bottom = 679.169
+rect_scale = Vector2( 0.25, 0.25 )
+
+[node name="door" parent="." instance=ExtResource( 17 )]
+margin_left = -60.7418
+margin_top = -162.19
+margin_right = 439.258
+margin_bottom = 337.81
+rect_scale = Vector2( 0.25, 0.25 )
+
+[node name="sofa" parent="." instance=ExtResource( 13 )]
+margin_left = -470.472
+margin_top = -226.353
+margin_right = 29.5278
+margin_bottom = 273.647
+rect_scale = Vector2( 0.25, 0.25 )
+
+[node name="cup" parent="." instance=ExtResource( 5 )]
+margin_left = 43.0126
+margin_top = 20.6762
+margin_right = 543.013
+margin_bottom = 520.676
+rect_scale = Vector2( 0.25, 0.25 )
+
+[node name="apple" parent="." instance=ExtResource( 4 )]
+margin_left = -489.983
+margin_top = -313.362
+margin_right = 10.0173
+margin_bottom = 186.638
+rect_scale = Vector2( 0.25, 0.25 )
+
+[node name="pineapple" parent="." instance=ExtResource( 12 )]
+margin_left = -203.876
+margin_top = -7.67084
+margin_right = 296.124
+margin_bottom = 492.33
+rect_scale = Vector2( 0.25, 0.25 )
+
+[node name="pitaya" parent="." instance=ExtResource( 18 )]
+margin_left = -160.143
+margin_top = -286.901
+margin_right = 339.857
+margin_bottom = 213.099
+rect_scale = Vector2( 0.25, 0.25 )
+
+[node name="chocolate" parent="." instance=ExtResource( 2 )]
+margin_left = 339.119
+margin_top = 13.5649
+margin_right = 839.119
+margin_bottom = 513.565
+rect_scale = Vector2( 0.25, 0.25 )
+
+[node name="coffee" parent="." instance=ExtResource( 3 )]
+margin_left = 138.215
+margin_top = -300.555
+margin_right = 638.215
+margin_bottom = 199.445
+rect_scale = Vector2( 0.25, 0.25 )
+
+[node name="tea" parent="." instance=ExtResource( 16 )]
+margin_left = -299.585
+margin_top = -158.442
+margin_right = 200.415
+margin_bottom = 341.558
+rect_scale = Vector2( 0.25, 0.25 )
+
+[node name="water" parent="." instance=ExtResource( 20 )]
+margin_left = -507.114
+margin_top = 207.238
+margin_right = -7.11349
+margin_bottom = 707.238
+rect_scale = Vector2( 0.25, 0.25 )
+
+[node name="rose" parent="." instance=ExtResource( 14 )]
+margin_left = -338.897
+margin_top = 186.648
+margin_right = 161.103
+margin_bottom = 686.648
+rect_scale = Vector2( 0.25, 0.25 )
+
+[node name="lily" parent="." instance=ExtResource( 19 )]
+margin_left = -414.305
+margin_top = -21.0099
+margin_right = 85.6954
+margin_bottom = 478.99
+rect_scale = Vector2( 0.25, 0.25 )
+
+[node name="orchid" parent="." instance=ExtResource( 6 )]
+margin_left = 133.865
+margin_top = -92.5829
+margin_right = 633.865
+margin_bottom = 407.417
+rect_scale = Vector2( 0.25, 0.25 )
+
+[node name="Translation" parent="." instance=ExtResource( 22 )]
+visible = true
+
+[connection signal="pressed" from="table" to="." method="_on_table_pressed"]
+[connection signal="pressed" from="plate" to="." method="_on_plate_pressed"]
+[connection signal="pressed" from="fork" to="." method="_on_fork_pressed"]
+[connection signal="pressed" from="spoon" to="." method="_on_spoon_pressed"]
+[connection signal="pressed" from="glass" to="." method="_on_glass_pressed"]
+[connection signal="pressed" from="knife" to="." method="_on_knife_pressed"]
+[connection signal="pressed" from="TV" to="." method="_on_TV_pressed"]
+[connection signal="pressed" from="door" to="." method="_on_door_pressed"]
+[connection signal="pressed" from="sofa" to="." method="_on_sofa_pressed"]
+[connection signal="pressed" from="cup" to="." method="_on_cup_pressed"]
+[connection signal="pressed" from="apple" to="." method="_on_apple_pressed"]
+[connection signal="pressed" from="pineapple" to="." method="_on_pineapple_pressed"]
+[connection signal="pressed" from="pitaya" to="." method="_on_pitaya_pressed"]
+[connection signal="pressed" from="chocolate" to="." method="_on_chocolate_pressed"]
+[connection signal="pressed" from="coffee" to="." method="_on_coffee_pressed"]
+[connection signal="pressed" from="tea" to="." method="_on_tea_pressed"]
+[connection signal="pressed" from="water" to="." method="_on_water_pressed"]
+[connection signal="pressed" from="rose" to="." method="_on_rose_pressed"]
+[connection signal="pressed" from="lily" to="." method="_on_lily_pressed"]
+[connection signal="pressed" from="orchid" to="." method="_on_orchid_pressed"]
