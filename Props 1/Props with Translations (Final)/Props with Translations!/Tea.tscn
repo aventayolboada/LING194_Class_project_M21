@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Props with Translations!/Apple.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Props with Translations!/Items/tea.png" type="Texture" id=2]
+
+[node name="Tea" instance=ExtResource( 1 )]
+anchor_left = 0.501
+anchor_right = 0.501
+margin_left = -249.435
+margin_right = 250.565
+texture_normal = ExtResource( 2 )
+
+[node name="Label" parent="WindowDialog" index="1"]
+text = "téè
+(tea)"
